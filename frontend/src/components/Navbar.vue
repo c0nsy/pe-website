@@ -4,45 +4,26 @@
       <span class="brand">Platinum Group</span>
     </div>
     <div class="right-aligned">
-      <span class="nav-link" @click="scrollToServices">Services</span>
-      <span class="nav-link" @click="scrollToWork">Work</span>
-
-      <button class="contact-button" @click="scrollToContactForm">
+      <span class="nav-link" @click="scrollToSection('#services')"
+        >Services</span
+      >
+      <span class="nav-link" @click="scrollToSection('#gallery')">Work</span>
+      <button class="contact-button" @click="scrollToSection('#contact-form')">
         Contact
       </button>
+      <router-link
+        to="/about"
+        class="nav-link"
+        @click.prevent="scrollToSection('#about')"
+        >About</router-link
+      >
     </div>
   </nav>
 </template>
 
 <script setup>
-const scrollToSection = (event) => {
-  event.preventDefault(); // Prevent default anchor click behavior
-  const targetId = event.currentTarget.getAttribute("data-target");
+const scrollToSection = (targetId) => {
   const targetElement = document.querySelector(targetId);
-
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
-const scrollToServices = () => {
-  const targetElement = document.querySelector("#services");
-
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
-const scrollToWork = () => {
-  const targetElement = document.querySelector("#gallery");
-
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
-const scrollToContactForm = () => {
-  const targetElement = document.querySelector("#contact-form");
 
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: "smooth" });

@@ -12,8 +12,9 @@
       </a>
     </div>
     <div class="contact-info">
-      <span>519 444 1920 | </span>
-      <span>test@email.com</span>
+      <span>Primary: (548) 558-1970 |</span>
+      <span>After Hours: (519) 498-4694 |</span>
+      <span>office@platinumeg.ca</span>
     </div>
   </nav>
 </template>
@@ -27,7 +28,7 @@
   align-items: center; /* Center items vertically */
   background-color: #ff8c00; /* Orange background */
   color: white; /* White text */
-  padding: 0.5rem 1rem; /* Remove left/right padding */
+  padding: 0.5rem 1rem; /* Padding around the bar */
   margin: 0; /* Remove any default margin */
   position: fixed; /* Fix the navbar to the top */
   width: 100%; /* Full width */
@@ -49,5 +50,13 @@
   display: flex;
   align-items: center; /* Center contact info vertically */
   color: white; /* Make sure the contact info is white */
+}
+
+.contact-info span {
+  margin-right: 0.1rem; /* Add space between each span */
+}
+
+.contact-info span:last-child {
+  margin-right: 0; /* Remove the margin from the last span */
 }
 </style>

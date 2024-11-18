@@ -2,14 +2,26 @@
   <div>
     <div class="hero-section">
       <div class="overlay">
-        <h1 class="hero-text">A STEP ABOVE THE REST</h1>
+        <h1 class="hero-text">We’re proud to be... A Step Above the Rest!</h1>
         <button class="contact-button" @click="scrollToContactForm">
           Contact
         </button>
+        <p>
+          From its operations facility in Cambridge, Ontario, the company
+          delivers a robust portfolio of professional services to a range of
+          clientele who represent both residential and commercial markets.
+          Regardless of the season, and no matter how big or how small, Platinum
+          Enterprise Group is your turnkey, one-stop solution for all your
+          property needs!
+        </p>
       </div>
     </div>
     <div class="description-bar">
-      <p>Discover your dream garden and join the ‘outdoor living’ lifestyle</p>
+      <p>
+        Platinum Enterprise Group has grown from a grassroots yard-scape venture
+        into the multi-services property maintenance and landscaping enterprise
+        it is recognized as today.
+      </p>
     </div>
   </div>
 </template>
@@ -56,6 +68,7 @@ const scrollToContactForm = () => {
   ); /* Dark overlay for better text visibility */
   padding: 2rem; /* Padding for the content */
   text-align: center; /* Center text */
+  width: 80%;
 }
 
 .hero-text {

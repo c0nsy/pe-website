@@ -7,6 +7,7 @@
     <Services />
     <Gallery />
     <ContactForm />
+    <About />
   </div>
 </template>
 
@@ -17,4 +18,5 @@ import Gallery from "./components/Gallery.vue";
 import HeroSection from "./components/HeroSection.vue";
 import Navbar from "./components/Navbar.vue";
 import Services from "./components/Services.vue";
+import About from "./components/About.vue";
 </script>
