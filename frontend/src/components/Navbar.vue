@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-bar">
     <div class="left-aligned">
-      <span class="brand">Platinum Group</span>
+      <img src="../assets/peg_logo_2.png" alt="Logo" width="100" height="100" />
     </div>
     <div class="right-aligned">
       <span class="nav-link" @click="scrollToSection('#services')"
@@ -36,7 +36,7 @@ const scrollToSection = (targetId) => {
   display: flex;
   justify-content: space-between; /* Space between left and right sections */
   align-items: center; /* Center items vertically */
-  background-color: white; /* White background */
+  background-color: #000000; /* Black background */
   padding: 0.5rem 1rem; /* Padding for spacing */
   position: fixed; /* Fix the navbar below the ContactBar */
   width: 100%; /* Full width */
@@ -51,7 +51,7 @@ const scrollToSection = (targetId) => {
 
 .brand {
   font-weight: bold; /* Bold for brand name */
-  color: black; /* Black text */
+  color: #c1c1c0; /* Light gray for brand text */
 }
 
 .right-aligned {
@@ -60,19 +60,19 @@ const scrollToSection = (targetId) => {
 }
 
 .nav-link {
-  color: black; /* Black text */
+  color: #c1c1c0; /* Light gray text */
   text-decoration: none; /* Remove underline */
   cursor: pointer; /* Change cursor on hover */
   transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
-  color: #ff8c00; /* Change to orange on hover */
+  color: #838484; /* Medium gray on hover */
 }
 
 .contact-button {
-  background-color: #ff8c00; /* Orange background */
-  color: white; /* White text */
+  background-color: #5b5a5a; /* Charcoal gray background */
+  color: #c1c1c0; /* Light gray text */
   border: none; /* Remove border */
   border-radius: 4px; /* Rounded corners */
   padding: 0.5rem 1rem; /* Padding for button */
@@ -81,6 +81,7 @@ const scrollToSection = (targetId) => {
 }
 
 .contact-button:hover {
-  background-color: black; /* Change to black on hover */
+  background-color: #838484; /* Medium gray on hover */
+  color: #000000; /* Black text */
 }
 </style>

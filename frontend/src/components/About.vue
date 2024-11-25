@@ -51,21 +51,22 @@
   max-width: 800px;
   margin: 100px auto;
   padding: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #444; /* Dark border */
   border-radius: 8px;
-  background-color: white;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff; /* White text */
 }
 
 .page-header {
   text-align: center;
-  color: orange;
+  color: white; /* Orange text for header */
   margin-bottom: 1.5rem;
 }
 
 .about-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #333;
+  color: #ccc; /* Light gray text for paragraphs */
 }
 
 .about-content p:first-of-type {

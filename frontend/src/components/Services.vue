@@ -135,6 +135,7 @@ const currentService1 = computed(() => services1.value[currentIndex1.value]);
 // Get the current service based on index for the second set
 const currentService2 = computed(() => services2.value[currentIndex2.value]);
 </script>
+
 <style scoped>
 /* Styling for the Services and Home Titles */
 h1 {
@@ -169,14 +170,14 @@ h1 {
 .service-title {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: orange;
+  color: rgb(103, 99, 99);
   font-weight: bold;
 }
 
 /* Service description styling */
 .service-description {
   font-size: 1.2rem;
-  color: orange;
+  color: black;
 }
 
 /* Arrow button styling */
@@ -185,13 +186,13 @@ h1 {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: orange;
+  color: black;
   padding: 0 1rem;
   user-select: none;
 }
 
 /* Arrow button hover effect */
 .arrow:hover {
-  color: #ff7f50;
+  color: #838484;
 }
 </style>

@@ -1,82 +1,84 @@
 <template>
-  <div class="contact-form" id="contact-form">
-    <h2 class="form-header">Contact Us</h2>
-    <form @submit.prevent="handleSubmit">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="email" required />
-      </div>
-      <div class="form-group">
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" v-model="subject" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" v-model="message" rows="6" required></textarea>
-      </div>
-      <button type="submit" class="submit-button">Send Message</button>
-    </form>
-
-    <!-- Additional Contact Information -->
-    <div class="contact-info">
-      <p>
-        Serving Kitchener, Waterloo, Cambridge, Guelph, and greater Southwestern
-        Ontario, our management team would enjoy hearing from you! We welcome
-        all inquiries, from general questions to providing you with a cost
-        estimate.
-      </p>
-      <div>
-        <h3>Location</h3>
-        <p>
-          <strong>Office:</strong> Platinum Enterprise Group<br />10 Clemens
-          Ave., Building 2, Cambridge, Ontario N3C 3W2
-        </p>
-        <p>
-          <strong>Yard:</strong> 859 Courtland Ave East, Kitchener, Ontario N2C
-          1K4
-        </p>
-      </div>
-      <div>
-        <h3>Telephone</h3>
-        <p><strong>Primary:</strong> (548) 558-1970</p>
-        <p><strong>After Hours:</strong> (519) 498-4694</p>
-      </div>
-      <div>
-        <h3>Digital</h3>
-        <p>
-          <strong>Email: </strong>
-          <a href="mailto:office@platinumeg.ca">office@platinumeg.ca</a>
-        </p>
-      </div>
-      <div>
-        <h3>Hours</h3>
-        <p>Monday to Friday: 8:00 AM – 5:00 PM</p>
-        <p>Saturday: By Appointment</p>
-      </div>
+  <form @submit.prevent="sendEmail" id="contact-form" class="contact-form">
+    <div class="form-group">
+      <label for="from_name">Name:</label>
+      <input
+        type="text"
+        id="from_name"
+        name="user_name"
+        v-model="form.from_name"
+        required
+      />
     </div>
-  </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="user_email"
+        v-model="form.email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        v-model="form.message"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
 </template>
 
-<script setup>
-import { ref } from "vue";
+<script>
+import emailjs from "emailjs-com";
 
-const name = ref("");
-const email = ref("");
-const subject = ref("");
-const message = ref("");
-
-const handleSubmit = () => {
-  // Handle form submission logic here (e.g., sending data to an API)
-  console.log({
-    name: name.value,
-    email: email.value,
-    subject: subject.value,
-    message: message.value,
-  });
+export default {
+  data() {
+    return {
+      form: {
+        from_name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  mounted() {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  },
+  methods: {
+    sendEmail() {
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your actual service ID
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your actual template ID
+          {
+            from_name: this.form.from_name,
+            message: this.form.message,
+            reply_to: this.form.email,
+          }
+        )
+        .then(
+          (response) => {
+            console.log("Email sent successfully:", response);
+            alert("Your message has been sent!");
+            this.clearForm();
+          },
+          (error) => {
+            console.error("Failed to send email:", error);
+            alert("Oops! Something went wrong. Please try again.");
+          }
+        );
+    },
+    clearForm() {
+      this.form.from_name = "";
+      this.form.email = "";
+      this.form.message = "";
+    },
+  },
 };
 </script>
 
@@ -85,15 +87,10 @@ const handleSubmit = () => {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 8px;
-  background-color: white;
-}
-
-.form-header {
-  text-align: center;
-  color: orange;
-  margin-bottom: 1.5rem;
+  background-color: #1e1e1e; /* Dark background for the form */
+  color: #fff; /* Light text for contrast */
 }
 
 .form-group {
@@ -103,16 +100,17 @@ const handleSubmit = () => {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: orange;
+  color: #ccc; /* Lighter grey for labels */
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border: 1px solid #444;
   border-radius: 4px;
-  color: orange;
+  background-color: #333; /* Dark background for inputs */
+  color: #fff; /* White text in inputs */
 }
 
 textarea {
@@ -120,8 +118,8 @@ textarea {
 }
 
 .submit-button {
-  background-color: orange;
-  color: white;
+  background-color: #444; /* Dark button background */
+  color: #fff; /* White text */
   border: none;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
@@ -130,28 +128,6 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #cc8400;
-}
-
-/* Contact Information Styles */
-.contact-info {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #333;
-}
-
-.contact-info h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: orange;
-}
-
-.contact-info a {
-  color: orange;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
+  background-color: #555; /* Slightly lighter on hover */
 }
 </style>
