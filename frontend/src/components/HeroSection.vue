@@ -69,6 +69,9 @@ const scrollToContactForm = () => {
   width: 100%; /* Use full width for mobile */
   border-radius: 10px;
 }
+.overlay p {
+  color: #ffffff; /* Set the text color to black */
+}
 
 .hero-text {
   color: #c1c1c0;
