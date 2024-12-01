@@ -21,6 +21,9 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
+    <div class="company-name">
+      <strong>Platinum Enterprise Group</strong>
+    </div>
     <div class="contact-info">
       <span>Primary: (548) 558-1970</span>
       <span>After Hours: (519) 498-4694</span>
@@ -30,7 +33,6 @@
 </template>
 
 <script setup></script>
-
 <style scoped>
 .contact-bar {
   display: flex;
@@ -60,11 +62,16 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* .social-icons a:hover {
-  color: #ff8c00;
-  transform: scale(1.2);
-} */
+/* Company Name */
+.company-name {
+  display: none; /* Hidden by default */
+  color: #ffffff; /* White text */
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
 
+/* Contact Info */
 .contact-info {
   text-align: center;
   font-size: 0.9rem;
@@ -75,6 +82,14 @@
   display: block; /* Stack items vertically */
 }
 
+/* Show Company Name for Mobile Screens */
+@media (max-width: 768px) {
+  .company-name {
+    display: block; /* Show company name for mobile */
+  }
+}
+
+/* Adjust for Larger Screens */
 @media (min-width: 768px) {
   .contact-bar {
     flex-direction: row;
