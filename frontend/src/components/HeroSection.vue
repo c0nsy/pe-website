@@ -98,7 +98,7 @@ const scrollToContactForm = () => {
 
 @media (max-width: 768px) {
   .overlay {
-    margin-top: 25px;
+    margin-top: 15%;
   }
   .hero-text {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
