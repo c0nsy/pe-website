@@ -22,9 +22,9 @@
       </a>
     </div>
     <div class="contact-info">
-      <span>Primary: (548) 558-1970 |</span>
-      <span>After Hours: (519) 498-4694 |</span>
-      <span>office@platinumeg.ca</span>
+      <span>Primary: (548) 558-1970</span>
+      <span>After Hours: (519) 498-4694</span>
+      <span>Email: office@platinumeg.ca</span>
     </div>
   </nav>
 </template>
@@ -34,72 +34,70 @@
 <style scoped>
 .contact-bar {
   display: flex;
-  justify-content: space-between; /* Separate social icons and contact info */
-  align-items: center; /* Vertically align content */
-  background-color: #000000; /* Black background for contrast */
-  color: #c1c1c0; /* Light gray text color */
-  padding: 0.5rem 1rem; /* Padding around the bar */
-  margin: 0; /* Remove default margin */
-  position: fixed; /* Stick to the top */
-  width: 100%; /* Full width */
-  height: 50px; /* Slightly taller for a modern navbar */
-  top: 0; /* Position at the top */
-  z-index: 10; /* Keep above other elements */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #c1c1c0;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem; /* Add more space between icons */
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-icons a {
-  color: #c1c1c0; /* Light gray for icons */
-  font-size: 1.2rem; /* Slightly larger icons for emphasis */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth interactions */
+  color: #c1c1c0;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: #ff8c00; /* Orange highlight on hover */
-  transform: scale(1.2); /* Slight scale effect on hover */
-}
+/* .social-icons a:hover {
+  color: #ff8c00;
+  transform: scale(1.2);
+} */
 
 .contact-info {
-  display: flex;
-  align-items: center; /* Vertically align content */
-  gap: 0.5rem; /* Add space between contact items */
-  color: #c1c1c0; /* Light gray text for uniformity */
-  font-size: 0.9rem; /* Slightly smaller font for subtlety */
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .contact-info span {
-  margin: 0; /* Remove default margin */
+  display: block; /* Stack items vertically */
 }
 
-.contact-info span:not(:last-child)::after {
-  content: "|"; /* Separator between contact info */
-  margin-left: 0.5rem; /* Space between text and separator */
-  color: #c1c1c0; /* Same as text color */
-}
-
-.contact-info span:last-child {
-  font-weight: bold; /* Emphasize email for easy visibility */
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contact-bar {
-    flex-direction: column; /* Stack content on smaller screens */
-    align-items: flex-start; /* Align items to the left */
-    padding: 0.75rem 1rem; /* Adjust padding for readability */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
   }
 
   .social-icons {
-    margin-bottom: 0.5rem; /* Add spacing between sections */
+    margin-bottom: 0;
   }
 
   .contact-info {
-    gap: 0.3rem; /* Reduce gap on smaller screens */
-    font-size: 0.8rem; /* Adjust font size for readability */
+    text-align: right;
+    font-size: 0.9rem;
+  }
+
+  .contact-info span {
+    display: inline; /* Inline for larger screens */
+    margin-right: 1rem;
+  }
+
+  .contact-info span:last-child {
+    margin-right: 0;
   }
 }
 </style>

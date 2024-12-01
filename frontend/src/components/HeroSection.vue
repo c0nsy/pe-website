@@ -35,62 +35,85 @@ const scrollToContactForm = () => {
   }
 };
 </script>
+
 <style scoped>
 .hero-section {
-  height: 400px; /* Adjust the height as needed */
+  height: auto; /* Allow content to adjust dynamically */
   background-image: url("../assets/truck.jpg");
-  background-size: cover; /* Cover the entire div */
-  background-position: center; /* Center the background image */
-  position: relative; /* Position relative for overlay */
-  display: flex; /* Flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 125px;
+  padding: 20px; /* Add padding for smaller screens */
 }
 
 .description-bar {
-  height: 80px; /* Set height */
-  background-color: #000000; /* Black background */
-  display: flex; /* Flexbox for centering */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  color: #c1c1c0; /* Light gray text color */
-  font-size: 1.5rem; /* Font size */
-  text-align: center; /* Center text */
+  height: auto; /* Adjust dynamically for content */
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c1c1c0;
+  font-size: 1rem; /* Smaller font size for mobile */
+  text-align: center;
+  padding: 10px; /* Add padding for better spacing */
 }
 
 .overlay {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Dark overlay for better text visibility */
-  padding: 2rem; /* Padding for the content */
-  text-align: center; /* Center text */
-  width: 80%;
-  border-radius: 10px; /* Rounded corners for a modern feel */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem; /* Adjust padding for smaller screens */
+  text-align: center;
+  width: 100%; /* Use full width for mobile */
+  border-radius: 10px;
 }
 
 .hero-text {
-  color: #c1c1c0; /* Light gray text color */
-  font-size: 2.5rem; /* Font size for the heading */
-  margin-bottom: 1rem; /* Space below the heading */
+  color: #c1c1c0;
+  font-size: 1.8rem; /* Smaller font size for mobile */
+  margin-bottom: 1rem;
+  word-wrap: break-word; /* Ensure text wraps properly */
 }
 
 .contact-button {
-  background-color: #5b5a5a; /* Charcoal gray button background */
-  color: #c1c1c0; /* Light gray text color */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 0.5rem 1.5rem; /* Padding for the button */
-  font-size: 1rem; /* Font size for the button */
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  background-color: #5b5a5a;
+  color: #c1c1c0;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-button:hover {
-  background-color: #838484; /* Medium gray on hover */
-  color: #000000; /* Black text on hover */
+  background-color: #838484;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    margin-top: 25px;
+  }
+  .hero-text {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .contact-button {
+    font-size: 0.8rem; /* Adjust button font size */
+    padding: 0.4rem 0.8rem; /* Reduce padding */
+  }
+
+  .overlay {
+    padding: 1rem; /* Reduce padding */
+    width: 90%; /* Use a slightly narrower width */
+  }
+
+  .description-bar {
+    font-size: 0.9rem; /* Smaller font for better readability */
+    padding: 5px; /* Reduce padding */
+  }
 }
 </style>
