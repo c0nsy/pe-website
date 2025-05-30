@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection />
-    <!-- <Services /> -->
+    <Services />
     <ContactForm />
     <Gallery />
 
