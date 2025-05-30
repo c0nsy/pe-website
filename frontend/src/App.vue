@@ -3,20 +3,27 @@
     <!-- Contact Bar Component -->
     <ContactBar />
     <Navbar />
-    <HeroSection />
-    <Services />
-    <Gallery />
-    <ContactForm />
-    <About />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script setup>
 import ContactBar from "./components/ContactBar.vue";
-import ContactForm from "./components/ContactForm.vue";
-import Gallery from "./components/Gallery.vue";
-import HeroSection from "./components/HeroSection.vue";
 import Navbar from "./components/Navbar.vue";
-import Services from "./components/Services.vue";
-import About from "./components/About.vue";
 </script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

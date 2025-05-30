@@ -5,7 +5,7 @@
       <p>
         After a decade of service operating as Perfect Image Property Management
         Inc. (est. 2012), the company accepted new opportunities allowing for
-        continued growth and ease of expansion. Through the company’s
+        continued growth and ease of expansion. Through the company's
         amalgamation with a well-established local contracting enterprise, the
         strength of our collective team ensures continued satisfaction and
         excellence for each of our business clients. Now operating as Platinum
@@ -15,7 +15,7 @@
       </p>
       <p>
         From traditional landscape and general property maintenance many of
-        today’s property owners seek, we consistently strive to exceed your
+        today's property owners seek, we consistently strive to exceed your
         expectations whether your engagement is that of a traditional yard
         refreshment or more contemporary in nature such as the installation of
         custom stone masonry or a custom water feature. In all settings we
@@ -51,29 +51,67 @@
   max-width: 800px;
   margin: 100px auto;
   padding: 2rem;
-  border: 1px solid #444; /* Dark border */
+  border: 1px solid #ffffff;
   border-radius: 8px;
-  background-color: #1e1e1e; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .page-header {
   text-align: center;
-  color: white; /* Orange text for header */
-  margin-bottom: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .about-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #ccc; /* Light gray text for paragraphs */
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
 }
 
 .about-content p:first-of-type {
-  font-weight: bold; /* Highlight the opening paragraph */
+  font-weight: 500;
+  opacity: 1;
+  font-size: 1.1rem;
 }
 
 .about-content {
   text-align: justify;
+}
+
+.about-page:hover {
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    margin: 80px 1rem;
+    padding: 1.5rem;
+  }
+
+  .page-header {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .about-content p:first-of-type {
+    font-size: 1rem;
+  }
 }
 </style>

@@ -2,18 +2,14 @@
   <div>
     <div class="hero-section">
       <div class="overlay">
-        <h1 class="hero-text">We’re proud to be... A Step Above the Rest!</h1>
-        <button class="contact-button" @click="scrollToContactForm">
-          Contact
-        </button>
-        <p>
-          From its operations facility in Cambridge, Ontario, the company
-          delivers a robust portfolio of professional services to a range of
-          clientele who represent both residential and commercial markets.
-          Regardless of the season, and no matter how big or how small, Platinum
-          Enterprise Group is your turnkey, one-stop solution for all your
-          property needs!
-        </p>
+        <div class="button-container">
+          <router-link to="/property-maintenance" class="hero-button">
+            Property Maintenance
+          </router-link>
+          <router-link to="/contract-services" class="hero-button">
+            Contract Services
+          </router-link>
+        </div>
       </div>
     </div>
     <div class="description-bar">
@@ -26,19 +22,9 @@
   </div>
 </template>
 
-<script setup>
-const scrollToContactForm = () => {
-  const targetElement = document.querySelector("#contact-form");
-
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth" });
-  }
-};
-</script>
-
 <style scoped>
 .hero-section {
-  height: auto; /* Allow content to adjust dynamically */
+  height: 500px;
   background-image: url("../assets/truck.jpg");
   background-size: cover;
   background-position: center;
@@ -46,77 +32,87 @@ const scrollToContactForm = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 125px;
-  padding: 20px; /* Add padding for smaller screens */
+  margin-top: 165px;
+  padding: 20px;
 }
 
 .description-bar {
-  height: auto; /* Adjust dynamically for content */
+  height: auto;
   background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #c1c1c0;
-  font-size: 1rem; /* Smaller font size for mobile */
+  color: #ffffff;
+  font-size: 1rem;
   text-align: center;
-  padding: 10px; /* Add padding for better spacing */
+  padding: 1.5rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem; /* Adjust padding for smaller screens */
+  padding: 3rem;
   text-align: center;
-  width: 100%; /* Use full width for mobile */
+  width: 100%;
+  max-width: 800px;
   border-radius: 10px;
-}
-.overlay p {
-  color: #ffffff; /* Set the text color to black */
+  margin: 0 auto;
 }
 
-.hero-text {
-  color: #c1c1c0;
-  font-size: 1.8rem; /* Smaller font size for mobile */
-  margin-bottom: 1rem;
-  word-wrap: break-word; /* Ensure text wraps properly */
+.button-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-button {
-  background-color: #5b5a5a;
-  color: #c1c1c0;
+.hero-button {
+  background-color: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem; /* Adjust font size */
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 200px;
+  display: inline-block;
+  text-align: center;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
 }
 
-.contact-button:hover {
-  background-color: #838484;
-  color: #000000;
+.hero-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
   .overlay {
-    margin-top: 15%;
-  }
-  .hero-text {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 2rem;
+    width: 90%;
   }
 
-  .contact-button {
-    font-size: 0.8rem; /* Adjust button font size */
-    padding: 0.4rem 0.8rem; /* Reduce padding */
+  .button-container {
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .overlay {
-    padding: 1rem; /* Reduce padding */
-    width: 90%; /* Use a slightly narrower width */
+  .hero-button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 
   .description-bar {
-    font-size: 0.9rem; /* Smaller font for better readability */
-    padding: 5px; /* Reduce padding */
+    font-size: 0.9rem;
+    padding: 1rem;
   }
 }
 </style>

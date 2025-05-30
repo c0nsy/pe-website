@@ -1,36 +1,49 @@
 <template>
-  <form @submit.prevent="sendEmail" id="contact-form" class="contact-form">
-    <div class="form-group">
-      <label for="from_name">Name:</label>
-      <input
-        type="text"
-        id="from_name"
-        name="user_name"
-        v-model="form.from_name"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="user_email"
-        v-model="form.email"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea
-        id="message"
-        name="message"
-        v-model="form.message"
-        required
-      ></textarea>
-    </div>
-    <button type="submit" class="submit-button">Send Message</button>
-  </form>
+  <div class="contact-section" id="contact-form">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-description">
+      Ready to transform your property? Whether you need a quote for maintenance
+      services, have questions about our contracting work, or want to discuss
+      your next project, we're here to help. Fill out the form below and we'll
+      get back to you promptly.
+    </p>
+    <form @submit.prevent="sendEmail" class="contact-form">
+      <div class="form-group">
+        <label for="from_name">Name</label>
+        <input
+          type="text"
+          id="from_name"
+          name="user_name"
+          v-model="form.from_name"
+          required
+          placeholder="Your name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="user_email"
+          v-model="form.email"
+          required
+          placeholder="Your email address"
+        />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          v-model="form.message"
+          required
+          placeholder="Tell us about your project or inquiry"
+          rows="5"
+        ></textarea>
+      </div>
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -83,14 +96,51 @@ export default {
 </script>
 
 <style scoped>
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 2rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-description {
+  text-align: center;
+  color: #000000;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.3px;
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px solid #444;
+  border: 1px solid #ffffff;
   border-radius: 8px;
-  background-color: #1e1e1e; /* Dark background for the form */
-  color: #fff; /* Light text for contrast */
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .form-group {
@@ -100,34 +150,84 @@ export default {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #ccc; /* Lighter grey for labels */
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #444;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  background-color: #333; /* Dark background for inputs */
-  color: #fff; /* White text in inputs */
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
+  min-height: 120px;
 }
 
 .submit-button {
-  background-color: #444; /* Dark button background */
-  color: #fff; /* White text */
+  background-color: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .submit-button:hover {
-  background-color: #555; /* Slightly lighter on hover */
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 80px 1rem;
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
 }
 </style>
