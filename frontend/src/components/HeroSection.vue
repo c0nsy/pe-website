@@ -59,7 +59,7 @@
   max-width: 800px;
   border-radius: 10px;
   margin: 0 auto;
-  transform: translateY(-120px);
+  transform: translateY(-100px);
 }
 
 .button-container {
