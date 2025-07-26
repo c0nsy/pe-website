@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 165px;
+  margin-top: 120px;
   padding: 20px;
 }
 
@@ -59,6 +59,7 @@
   max-width: 800px;
   border-radius: 10px;
   margin: 0 auto;
+  transform: translateY(-120px);
 }
 
 .button-container {

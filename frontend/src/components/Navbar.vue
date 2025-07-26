@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-bar">
     <div class="left-aligned">
-      <img src="../assets/logo.png" alt="Logo" width="100" height="100" />
+      <img src="../assets/logo.png" alt="Logo" width="140" height="140" />
     </div>
     <div class="center-aligned">
       <span class="welcome-text"
@@ -88,7 +88,7 @@ const scrollToSection = (section) => {
 <style scoped>
 .nav-bar {
   display: grid;
-  grid-template-columns: 150px 1fr 250px;
+  grid-template-columns: 180px 1fr 250px;
   align-items: center;
   background-color: #000000;
   padding: 0 3rem;
@@ -185,7 +185,7 @@ const scrollToSection = (section) => {
 
 @media (max-width: 768px) {
   .nav-bar {
-    grid-template-columns: 100px 1fr 120px;
+    grid-template-columns: 140px 1fr 120px;
     padding: 0 1rem;
   }
 

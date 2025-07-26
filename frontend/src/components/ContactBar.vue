@@ -62,6 +62,14 @@ import { Icon } from "@iconify/vue";
   opacity: 0.8;
 }
 
+.social-icons a[aria-label="Facebook"] {
+  color: #1877f2;
+}
+
+.social-icons a[aria-label="Email"] {
+  color: #ffffff;
+}
+
 .social-icons a:hover {
   opacity: 1;
   transform: translateY(-1px);
