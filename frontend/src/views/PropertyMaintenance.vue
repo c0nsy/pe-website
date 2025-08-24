@@ -50,6 +50,17 @@
 
 <script setup>
 import { ref } from 'vue';
+// Import all property images
+import property1 from '../assets/work/property1.jpg';
+import property2 from '../assets/work/property2.jpg';
+import property3 from '../assets/work/property3.jpg';
+import property4 from '../assets/work/property4.jpg';
+import property6 from '../assets/work/property6.jpg';
+import property7 from '../assets/work/property7.jpg';
+import property8 from '../assets/work/property8.jpg';
+import property9 from '../assets/work/property9.jpg';
+import property10 from '../assets/work/property10.jpg';
+import property11 from '../assets/work/property11.jpg';
 
 const selectedService = ref(null);
 
@@ -60,9 +71,9 @@ const services = ref([
     shortDescription: "Professional lawn maintenance and care services",
     description: "Our comprehensive lawn care services include regular mowing, edging, fertilization, weed control, and seasonal maintenance. We ensure your lawn stays healthy and vibrant throughout the year with our expert care and attention to detail.",
     images: [
-      "/src/assets/work/property1.jpg",
-      "/src/assets/work/property2.jpg",
-      "/src/assets/work/property3.jpg"
+      property1,
+      property2,
+      property3
     ]
   },
   {
@@ -71,9 +82,9 @@ const services = ref([
     shortDescription: "Complete landscape design and implementation",
     description: "Transform your outdoor space with our hardscape and softscape design services. We create beautiful, functional landscapes that combine hard elements like patios and walkways with lush plantings and natural features.",
     images: [
-      "/src/assets/work/property4.jpg",
-      "/src/assets/work/property6.jpg",
-      "/src/assets/work/property7.jpg"
+      property4,
+      property6,
+      property7
     ]
   },
   {
@@ -82,9 +93,9 @@ const services = ref([
     shortDescription: "Custom interlock stone installation and repair",
     description: "Professional interlock stone installation for driveways, walkways, patios, and retaining walls. We use high-quality materials and expert craftsmanship to create durable, beautiful stone surfaces that enhance your property's value and curb appeal.",
     images: [
-      "/src/assets/work/property8.jpg",
-      "/src/assets/work/property9.jpg",
-      "/src/assets/work/property10.jpg"
+      property8,
+      property9,
+      property10
     ]
   },
   {
@@ -93,9 +104,9 @@ const services = ref([
     shortDescription: "Seasonal property cleanup and preparation",
     description: "Prepare your property for each season with our comprehensive cleanup services. We remove debris, trim overgrowth, clean gutters, and ensure your property is ready for the changing seasons.",
     images: [
-      "/src/assets/work/property11.jpg",
-      "/src/assets/work/property1.jpg",
-      "/src/assets/work/property2.jpg"
+      property11,
+      property1,
+      property2
     ]
   },
   {
@@ -104,9 +115,9 @@ const services = ref([
     shortDescription: "Professional sod installation and maintenance",
     description: "Fast, professional sod installation for instant green lawns. We prepare the soil, install high-quality sod, and provide maintenance instructions to ensure your new lawn establishes properly and thrives.",
     images: [
-      "/src/assets/work/property3.jpg",
-      "/src/assets/work/property4.jpg",
-      "/src/assets/work/property6.jpg"
+      property3,
+      property4,
+      property6
     ]
   },
   {
@@ -115,9 +126,9 @@ const services = ref([
     shortDescription: "High-quality artificial turf solutions",
     description: "Low-maintenance, year-round green with our premium artificial turf installation. Perfect for areas with high traffic, limited sunlight, or water restrictions. Our turf looks and feels natural while requiring minimal upkeep.",
     images: [
-      "/src/assets/work/property7.jpg",
-      "/src/assets/work/property8.jpg",
-      "/src/assets/work/property9.jpg"
+      property7,
+      property8,
+      property9
     ]
   },
   {
@@ -126,9 +137,9 @@ const services = ref([
     shortDescription: "Comprehensive cleaning and maintenance",
     description: "Professional janitorial services for commercial and residential properties. We provide regular cleaning, sanitization, and maintenance to keep your spaces clean, safe, and welcoming for occupants and visitors.",
     images: [
-      "/src/assets/work/property10.jpg",
-      "/src/assets/work/property11.jpg",
-      "/src/assets/work/property1.jpg"
+      property10,
+      property11,
+      property1
     ]
   },
   {
@@ -137,9 +148,9 @@ const services = ref([
     shortDescription: "Professional removal and cleanup services",
     description: "Fast and thorough junk removal and graffiti cleanup services. We safely remove unwanted items and restore surfaces to their original condition, helping maintain your property's appearance and value.",
     images: [
-      "/src/assets/work/property2.jpg",
-      "/src/assets/work/property3.jpg",
-      "/src/assets/work/property4.jpg"
+      property2,
+      property3,
+      property4
     ]
   },
   {
@@ -148,9 +159,9 @@ const services = ref([
     shortDescription: "Snow plowing, hauling, and ice control",
     description: "Reliable snow removal and ice control services to keep your property safe and accessible during winter weather. We provide 24/7 monitoring and rapid response to ensure your walkways, driveways, and parking areas remain clear.",
     images: [
-      "/src/assets/work/property6.jpg",
-      "/src/assets/work/property7.jpg",
-      "/src/assets/work/property8.jpg"
+      property6,
+      property7,
+      property8
     ]
   },
   {
@@ -159,9 +170,9 @@ const services = ref([
     shortDescription: "Round-the-clock weather monitoring and response",
     description: "Advanced weather monitoring systems that provide real-time alerts and automatic response protocols. We monitor weather conditions 24/7 to ensure proactive maintenance and emergency response when needed.",
     images: [
-      "/src/assets/work/property9.jpg",
-      "/src/assets/work/property10.jpg",
-      "/src/assets/work/property11.jpg"
+      property9,
+      property10,
+      property11
     ]
   }
 ]);
