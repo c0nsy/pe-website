@@ -6,15 +6,15 @@
       <div class="summary-grid">
         <div class="summary-item">
           <h3>Property Maintenance</h3>
-          <p>Comprehensive year-round property care including lawn maintenance, landscaping, snow removal, and 24/7 weather monitoring to keep your property looking its best in every season.</p>
+          <p>From grass to snow and everything in between—our team delivers full-service, year-round property care tailored for commercial clients, builders, and property managers who don't have time to chase contractors. We handle the lawn maintenance, landscaping, snow removal, and 24/7 weather monitoring—so you don't have to worry if it's going to be 30°C or a blizzard by breakfast. Your property stays sharp, safe, and looking its best—no matter what Mother Nature throws at it (and trust us, she's got an arm).</p>
         </div>
         <div class="summary-item">
           <h3>Contract Services</h3>
-          <p>Professional contracting solutions from fences and decks to roofing, painting, concrete work, and complete interior/exterior renovations with skilled craftsmanship.</p>
+          <p>From custom fences and decks to roofing, painting, concrete work, and full-scale renovations—our team delivers quality craftsmanship with zero shortcuts and zero nonsense. Looking to upgrade your space? We specialize in interior and exterior transformations, and yes—we also build some of the most badass backyard golf greens this side of the PGA. Whether you're chasing curb appeal or working on your short game between barbecues, we've got you covered.</p>
         </div>
         <div class="summary-item">
           <h3>Experience & Quality</h3>
-          <p>Over a decade of excellence serving our community with attention to detail, reliable service, and a commitment to exceeding expectations on every project.</p>
+          <p>With over 25 years in the game, Troy—the man behind Platinum—didn't just fall into this industry; he built his path with grit, hustle, and a lawn mower before he was even old enough to drive. While still in high school, he launched Harley Landscaping, juggling classes by day and client yards by night. That same energy, pride, and eye for quality fuels everything we do at Platinum today. We're not just here to do the job—we're here to do it right and leave your property looking like a million bucks (without the million-dollar price tag).</p>
         </div>
       </div>
       <div class="cta-section">

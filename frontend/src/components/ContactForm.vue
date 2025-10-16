@@ -2,10 +2,7 @@
   <div class="contact-section" id="contact-form">
     <h2 class="section-title">Get in Touch</h2>
     <p class="section-description">
-      Ready to transform your property? Whether you need a quote for maintenance
-      services, have questions about our contracting work, or want to discuss
-      your next project, we're here to help. Fill out the form below and we'll
-      get back to you promptly.
+      Sick of chasing down contractors who vanish faster than your budget? Whether you manage properties, build them from the ground up, or run commercial sites that demand real results — you're in the right place. At Platinum Enterprise Group, we don't cut corners (unless it's grass). We show up, we handle business, and we make you look like a genius for hiring us. From 24/7 maintenance and snow removal to full-scale renovations and upgrades, we do it all — and we do it properly. Fill out the form below and tell us what you need. No fluff. No excuses. Just professionals who actually pick up the phone, get the job done, and keep your properties running smoother than your tenant's excuses.
     </p>
     <form @submit.prevent="sendEmail" class="contact-form">
       <div class="form-group">

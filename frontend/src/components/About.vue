@@ -3,44 +3,22 @@
     <h2 class="page-header">About Us</h2>
     <div class="about-content">
       <p>
-        After a decade of service operating as Perfect Image Property Management
-        Inc. (est. 2012), the company accepted new opportunities allowing for
-        continued growth and ease of expansion. Through the company's
-        amalgamation with a well-established local contracting enterprise, the
-        strength of our collective team ensures continued satisfaction and
-        excellence for each of our business clients. Now operating as Platinum
-        Enterprise Group, we continue to proudly serve our local community with
-        the very same degree of professional service our reputation has long
-        been built upon.
+        With over 25 years in the industry, our owner Troy brings a lifetime of hands-on experience, an unmatched work ethic, and a deep-rooted passion for getting the job done right. What started as a high school hustle quickly grew into a full-fledged career—earning his stripes the hard way and building a name that's now trusted across the region.
       </p>
       <p>
-        From traditional landscape and general property maintenance many of
-        today's property owners seek, we consistently strive to exceed your
-        expectations whether your engagement is that of a traditional yard
-        refreshment or more contemporary in nature such as the installation of
-        custom stone masonry or a custom water feature. In all settings we
-        advocate meeting with you to discuss your vision under a no-obligation
-        to proceed basis. In meeting with you we are frequently able to
-        complement your ideas from our past experiences. No matter the size or
-        scope of your project, Platinum Enterprise Group holds a genuine
-        interest in helping you achieve your personal vision.
+        Originally established as an incorporated company in 2012, the business continued to evolve—accepting new challenges, scaling operations, and ultimately merging with a well-established local property maintenance enterprise. That strategic move led to the creation of Platinum Enterprise Group, bringing together years of experience, trusted service, and a shared commitment to excellence under one banner. The result? A stronger, more versatile team that delivers consistent results for every client, on every site.
       </p>
       <p>
-        With pride in every aspect of our workmanship, we bring assurance that
-        realize three core elements to all clients. Through 24-hour weather
-        monitoring and attentive response to fast rising inclement conditions,
-        Platinum Enterprise Group ensures public safety under its winter snow
-        removal, salting, and ice control programs. Beginning with the arrival
-        of Spring we invest ourselves in your pride of ownership by maintaining
-        the aesthetically pleasing environment you require within a dedicated
-        maintenance program managing grass space, bedding preparation, and
-        installation of all greenery. Whether our engagement is within the
-        commercial or residential sector, we guarantee a result that is always
-        inviting of the public!
+        From traditional landscaping and property maintenance to high-end custom stonework, backyard golf greens, and eye-catching water features—we bring your vision to life with creativity, care, and a touch of Platinum polish. We don't just cut grass and lay pavers—we help elevate curb appeal, boost property value, and make your neighbours jealous (in a good way).
       </p>
       <p>
-        With years of practical experience and the drive to achieve, we are
-        proud to be seen as a step above the rest!
+        Every project starts with a no-pressure conversation. We take the time to understand your goals and offer insight based on decades of experience. Whether your project is residential or commercial, big or small, modern or classic—we're here to help you bring it to life.
+      </p>
+      <p>
+        And when winter hits? Our 24/7 weather monitoring and rapid-response snow and ice control programs help keep your site safe, clean, and accessible. When spring rolls around, we shift gears into full property care mode—trimming, edging, planting, and making sure every inch of your space looks dialed in.
+      </p>
+      <p>
+        At Platinum, we take pride in being a step above the rest—backed by experience, driven by results, and always ready to go the extra mile. But make no mistake: it's our clients who make us. We don't see ourselves as a step above them—we see ourselves right beside them, working together to bring their vision to life. Every project is a partnership, and we treat it—and our clients—with the respect and dedication they deserve.
       </p>
     </div>
   </div>

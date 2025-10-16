@@ -14,9 +14,15 @@
     </div>
     <div class="description-bar">
       <p>
-        Platinum Enterprise Group has grown from a grassroots yard-scape venture
-        into the multi-services property maintenance and landscaping enterprise
-        it is recognized as today.
+        Platinum Enterprise Group has grown from a grassroots yard-scape venture into the multi-services property
+        maintenance and landscaping enterprise it is recognized as today.
+        <br><br>
+        We're proud to be... <strong>A Step Above the Rest!</strong>
+        <br><br>
+        From its operations facility in Cambridge, Ontario, the company delivers a robust portfolio of professional services
+        to a range of clientele who represent both residential and commercial markets. Regardless of the season, and no
+        matter how big or how small, Platinum Enterprise Group is your turnkey, one-stop solution for all your property
+        needs!
       </p>
     </div>
   </div>

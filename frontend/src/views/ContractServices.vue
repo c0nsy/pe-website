@@ -3,10 +3,11 @@
     <div class="content">
       <h1>Contract Services</h1>
       <p class="description">
-        Our contracting services deliver professional solutions for both
-        residential and commercial properties. With years of experience and
-        skilled craftsmanship, we ensure quality workmanship and attention to
-        detail in every project.
+        In November 2023, Perfect Image Property Maintenance Inc. announced its partnership with Platinum Enterprise
+        Group, accepting the opportunity to become a full-service property maintenance enterprise. This represented a
+        step towards service expansion. In addition to its existing landscape and property maintenance services, through
+        strategic opportunity and new partnerships, Perfect Image has realized an expanded scope of related service
+        offerings.
       </p>
 
       <div class="services-grid">
@@ -65,9 +66,20 @@ const selectedService = ref(null);
 const services = ref([
   {
     id: 1,
-    title: "Fences & Decks",
-    shortDescription: "Custom fence and deck design, installation, and repair",
-    description: "Professional fence and deck construction services tailored to your property's needs. We design and build durable, attractive fences and decks using high-quality materials and expert craftsmanship. From privacy fences to custom deck designs, we ensure lasting beauty and functionality.",
+    title: "Asphalt Maintenance – Repair",
+    shortDescription: "Smooth and durable surface solutions",
+    description: "Asphalt ensures a smooth and durable surface for driveways, parking lots and more. Our service includes the installation, maintenance, and repairs.",
+    images: [
+      concretework,
+      contract1,
+      contract2
+    ]
+  },
+  {
+    id: 2,
+    title: "Interior Renovation",
+    shortDescription: "Transform your living or working space",
+    description: "Transform your living or working space with our interior renovation expertise, ensuring modern, stylish and functional designs.",
     images: [
       contract1,
       contract2,
@@ -75,32 +87,21 @@ const services = ref([
     ]
   },
   {
-    id: 2,
-    title: "Tree Removal",
-    shortDescription: "Professional tree removal and maintenance services",
-    description: "Safe and efficient tree removal services for both residential and commercial properties. Our certified arborists handle everything from small tree trimming to large tree removal, stump grinding, and emergency storm damage cleanup with precision and care.",
-    images: [
-      garden,
-      contract1,
-      contract2
-    ]
-  },
-  {
     id: 3,
-    title: "Concrete Work",
-    shortDescription: "Complete concrete solutions for any project",
-    description: "Comprehensive concrete services including driveways, walkways, patios, foundations, and decorative concrete work. We use premium materials and advanced techniques to create durable, beautiful concrete surfaces that enhance your property's value and functionality.",
+    title: "Painting",
+    shortDescription: "Add a splash of colour and personality",
+    description: "Add a splash of colour and personality to your spaces through our exceptional interior paint service team. Refresh your home or finalize your new build! Our service team will refresh both indoor and outdoor surfaces.",
     images: [
-      concretework,
-      hardscape,
-      hardscape2
+      contract1,
+      contract2,
+      hardscape
     ]
   },
   {
     id: 4,
-    title: "Shingle Roofing",
-    shortDescription: "Expert roofing installation and repair",
-    description: "Professional roofing services including new roof installation, repairs, maintenance, and emergency storm damage response. We work with all major roofing materials and provide comprehensive warranties to protect your investment.",
+    title: "Framing",
+    shortDescription: "Precision framing for residential and commercial projects",
+    description: "Trust our skilled craftsmen to provide you with precision framing for residential and commercial projects.",
     images: [
       contract1,
       contract2,
@@ -109,9 +110,9 @@ const services = ref([
   },
   {
     id: 5,
-    title: "Interior/Exterior Painting",
-    shortDescription: "Professional painting services for all surfaces",
-    description: "Complete interior and exterior painting services for residential and commercial properties. We provide surface preparation, quality paint application, and finishing touches to transform your spaces with lasting beauty and protection.",
+    title: "Flooring – Tile",
+    shortDescription: "Elevate the aesthetics and comfort of your floors",
+    description: "Elevate the aesthetics and comfort of your floors with our diverse flooring and tile installation solutions.",
     images: [
       contract1,
       contract2,
@@ -120,9 +121,9 @@ const services = ref([
   },
   {
     id: 6,
-    title: "Parking Lot Painting",
-    shortDescription: "Line painting and maintenance for parking areas",
-    description: "Professional parking lot striping and maintenance services for commercial properties. We provide clear, durable line painting, handicap space marking, directional arrows, and parking lot maintenance to ensure safety and compliance.",
+    title: "Demolition",
+    shortDescription: "Safe and efficient demolition services",
+    description: "Rely on our expert team for safe and efficient demolition services tailored to your project requirements.",
     images: [
       concretework,
       contract1,
@@ -131,13 +132,35 @@ const services = ref([
   },
   {
     id: 7,
-    title: "Outdoor Living Spaces",
-    shortDescription: "Custom outdoor space design and construction",
-    description: "Transform your outdoor area into a beautiful, functional living space. We design and build custom patios, pergolas, outdoor kitchens, fire pits, and landscaping features that create the perfect environment for outdoor entertainment and relaxation.",
+    title: "Insulation – Vapor Barrier",
+    shortDescription: "Optimized energy efficiency and comfort",
+    description: "Gain the benefits of optimized energy efficiency and comfort with our insulation and Vapor barrier installation services.",
     images: [
-      hardscape,
-      hardscape2,
-      garden
+      contract1,
+      contract2,
+      hardscape
+    ]
+  },
+  {
+    id: 8,
+    title: "Drywall – Taping",
+    shortDescription: "Seamless and polished walls",
+    description: "Achieve seamless and polished walls with our professional drywall and taping services.",
+    images: [
+      contract1,
+      contract2,
+      concretework
+    ]
+  },
+  {
+    id: 9,
+    title: "Mobile Welding Services",
+    shortDescription: "Welding technologies directly to your location",
+    description: "Bringing the necessary welding technologies directly to the location allows for both efficiency and practicality through being onsite.",
+    images: [
+      contract1,
+      contract2,
+      hardscape
     ]
   }
 ]);

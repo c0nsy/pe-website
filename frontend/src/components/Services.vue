@@ -12,7 +12,7 @@
 
       <button class="arrow right-arrow" @click="nextService1">&#9654;</button>
     </div>
-    <h1>Home</h1>
+    <h1>Contract Services</h1>
     <!-- Second Services Container -->
     <div class="services-container" id="services">
       <button class="arrow left-arrow" @click="prevService2">&#9664;</button>
@@ -30,39 +30,34 @@
 <script setup>
 import { ref, computed } from "vue";
 
-// First set of services (original)
+// Property Maintenance services
 const services1 = ref([
   {
-    title: "Landscaping",
+    title: "Snow & Ice Management",
     description:
-      "Transform your outdoor space with expert landscaping services, tailored to your vision and needs. Our team ensures a stunning and functional design that enhances your property’s beauty.",
+      "At Platinum, snow and ice control isn't just a service—it's our specialty. We provide reliable, around-the-clock snow removal solutions tailored to the needs of retail centers, logistics hubs, healthcare facilities, plazas, and industrial properties.",
   },
   {
-    title: "Snow Removal",
+    title: "Lawn Maintenance",
     description:
-      "Stay safe during winter with our reliable snow removal services. We provide prompt and efficient snow clearing for driveways, sidewalks, and parking lots, keeping your property accessible and safe.",
+      "Let's be real - first impressions start at the curb. Whether it's your home or your business, a messy lawn screams, \"I've given up.\" Lucky for you, we haven't. We handle both with military-grade precision.",
   },
   {
-    title: "Gardening",
+    title: "Landscape Design & Installation",
     description:
-      "Create a thriving garden with our gardening services. We offer planting, maintenance, and design to help you cultivate a beautiful and healthy outdoor environment.",
+      "Free consultation with our design professionals to ensure that we transform vision into results, on time and within your budget. Whether it is rejuvenating an existing landscape or custom building your vision from the ground up.",
   },
   {
-    title: "Roofing",
+    title: "24/7 Weather Monitoring",
     description:
-      "Protect your home with our high-quality roofing services. We specialize in roof installation, repairs, and inspections, ensuring your property is secure against the elements.",
+      "Our advanced, real-time weather monitoring systems work around the clock to keep your property protected. Using cutting-edge technology, we receive instant alerts and activate automatic response protocols.",
   },
 ]);
 
 const currentIndex1 = ref(0);
 
-// Second set of services (new data)
+// Contract Services (Platinum Home)
 const services2 = ref([
-  {
-    title: "Asphalt Maintenance – Repair",
-    description:
-      "Asphalt ensures a smooth and durable surface for driveways, parking lots and more. Our service includes the installation, maintenance, and repairs.",
-  },
   {
     title: "Interior Renovation",
     description:
@@ -82,6 +77,11 @@ const services2 = ref([
     title: "Flooring – Tile",
     description:
       "Elevate the aesthetics and comfort of your floors with our diverse flooring and tile installation solutions.",
+  },
+  {
+    title: "Asphalt Maintenance – Repair",
+    description:
+      "Asphalt ensures a smooth and durable surface for driveways, parking lots and more. Our service includes the installation, maintenance, and repairs.",
   },
   {
     title: "Demolition",
