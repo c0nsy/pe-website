@@ -63,6 +63,11 @@ import snowremoval from '../assets/work/snowremoval.jpg';
 import concretework from '../assets/work/concretework.jpg';
 import contract1 from '../assets/work/contract1.jpg';
 import contract2 from '../assets/work/contract2.jpg';
+// New images
+import frontsteps from '../assets/work/frontsteps.jpg';
+import propertymaintenance from '../assets/work/propertymaitenance.jpg';
+import propertymaintenance2 from '../assets/work/propertymaitenance2.jpg';
+import stonestepsgarden from '../assets/work/stonestepsgarden.jpg';
 
 const selectedService = ref(null);
 
@@ -84,9 +89,9 @@ const services = ref([
     shortDescription: "Free consultation with our design professionals",
     description: "Free consultation with our design professionals to ensure that we transform vision into results, on time and within your budget.",
     images: [
+      stonestepsgarden,
       hardscape,
-      hardscape2,
-      garden
+      hardscape2
     ]
   },
   {
@@ -95,9 +100,9 @@ const services = ref([
     shortDescription: "Professional landscape installation and rejuvenation",
     description: "Whether it is rejuvenating an existing landscape or custom building your vision from the ground up, we provide experienced, professional, dedicated experience ensuring customer satisfaction with quality a step above the rest.",
     images: [
+      frontsteps,
       hardscape,
-      hardscape2,
-      garden
+      hardscape2
     ]
   },
   {
@@ -106,9 +111,9 @@ const services = ref([
     shortDescription: "Harmonious balance between soft and hard elements",
     description: "A well-designed landscape often incorporates a harmonious balance between soft-scape and hard-scape elements. This can include the construction of retaining walls, inter-lock brick, custom stone masonry or just incorporating rock into florals and greenery.",
     images: [
+      stonestepsgarden,
       hardscape,
-      hardscape2,
-      garden
+      hardscape2
     ]
   },
   {
@@ -128,9 +133,9 @@ const services = ref([
     shortDescription: "Maintenance of your landscape investment",
     description: "Maintenance of your investment is important. To ensure that your property presents with natural appeal and pride in ownership our maintenance team offers its clientele a variety of services, including: mowing, turf repair, overseeding, fertilization, and pruning. Just like people ..everything will flourish with a little bit of attention.",
     images: [
-      lawncare,
-      lawncare1,
-      garden
+      propertymaintenance,
+      propertymaintenance2,
+      lawncare
     ]
   },
   {

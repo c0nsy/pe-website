@@ -60,6 +60,11 @@ import hardscape2 from '../assets/work/hardscape2.jpg';
 import garden from '../assets/work/garden.jpg';
 import lawn from '../assets/work/lawn.jpg';
 import lawn2 from '../assets/work/lawn2.jpg';
+// New images
+import frontsteps from '../assets/work/frontsteps.jpg';
+import propertymaintenance from '../assets/work/propertymaitenance.jpg';
+import propertymaintenance2 from '../assets/work/propertymaitenance2.jpg';
+import stonestepsgarden from '../assets/work/stonestepsgarden.jpg';
 
 const selectedService = ref(null);
 
@@ -92,9 +97,9 @@ const services = ref([
     shortDescription: "Add a splash of colour and personality",
     description: "Add a splash of colour and personality to your spaces through our exceptional interior paint service team. Refresh your home or finalize your new build! Our service team will refresh both indoor and outdoor surfaces.",
     images: [
+      frontsteps,
       contract1,
-      contract2,
-      hardscape
+      contract2
     ]
   },
   {
@@ -114,9 +119,9 @@ const services = ref([
     shortDescription: "Elevate the aesthetics and comfort of your floors",
     description: "Elevate the aesthetics and comfort of your floors with our diverse flooring and tile installation solutions.",
     images: [
+      stonestepsgarden,
       contract1,
-      contract2,
-      hardscape
+      contract2
     ]
   },
   {
