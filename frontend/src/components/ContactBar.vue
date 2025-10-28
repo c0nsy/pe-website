@@ -2,7 +2,7 @@
   <nav class="contact-bar">
     <div class="social-icons">
       <a
-        href="https://www.facebook.com/share/1DdcCRpERg/"
+        href="https://www.facebook.com/profile.php?id=61566666094999"
         aria-label="Facebook"
         target="_blank"
         rel="noopener noreferrer"
