@@ -187,18 +187,20 @@ const closeModal = () => {
 }
 
 h1 {
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 
 .description {
-  color: #333;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 3rem;
   max-width: 800px;
+  font-family: 'Lora', serif;
 }
 
 .services-grid {
@@ -222,15 +224,17 @@ h1 {
 }
 
 .service-item h3 {
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   margin-bottom: 0.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
 .service-item p {
-  color: #666;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 0.9rem;
   line-height: 1.4;
+  font-family: 'Lora', serif;
 }
 
 /* Modal Styles */
@@ -289,10 +293,11 @@ h1 {
 }
 
 .modal-header h2 {
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 2rem;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 
 .modal-body {
@@ -304,10 +309,11 @@ h1 {
 }
 
 .service-description p {
-  color: #333;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
+  font-family: 'Lora', serif;
 }
 
 .service-gallery {

@@ -97,22 +97,22 @@ export default {
   max-width: 800px;
   margin: 100px auto;
   padding: 2rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .section-title {
   text-align: center;
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
+  font-family: 'Cinzel', serif;
 }
 
 .section-description {
   text-align: center;
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   opacity: 0.9;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -121,16 +121,17 @@ export default {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.3px;
+  font-family: 'Lora', serif;
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #C0C0C0; /* Platinum Silver */
   border-radius: 8px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #1B1B1B; /* Graphite Black */
+  color: #C0C0C0; /* Platinum Silver */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -147,7 +148,7 @@ export default {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -157,20 +158,20 @@ input,
 textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #C0C0C0; /* Platinum Silver */
   border-radius: 4px;
   background-color: #000000;
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1rem;
   transition: all 0.3s ease;
-  font-family: "Inter", sans-serif;
+  font-family: 'Lora', serif;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #ffffff;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  border-color: #9aa0a6; /* Darker platinum for focus */
+  box-shadow: 0 0 0 2px rgba(192, 192, 192, 0.1);
 }
 
 input::placeholder,
@@ -184,7 +185,7 @@ textarea {
 }
 
 .submit-button {
-  background-color: #ffffff;
+  background-color: #C0C0C0; /* Platinum Silver */
   color: #000000;
   border: none;
   border-radius: 4px;
@@ -199,7 +200,7 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #f0f0f0;
+  background-color: #9aa0a6; /* Darker platinum for hover */
   transform: translateY(-1px);
 }
 

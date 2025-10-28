@@ -5,7 +5,7 @@
     </div>
     <div class="center-aligned">
       <span class="welcome-text"
-        >Welcome To Platinum Enterprise Group - A Step Above The Rest!</span
+        >Welcome To Platinum Enterprise Group - <span class="tagline">A Step Above The Rest!</span></span
       >
     </div>
     <div class="right-aligned">
@@ -89,8 +89,7 @@ const scrollToSection = (section) => {
   top: 35px;
   z-index: 9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .left-aligned {
@@ -112,13 +111,19 @@ const scrollToSection = (section) => {
 }
 
 .welcome-text {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.1rem;
   font-weight: 500;
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.5px;
   opacity: 0.9;
+  font-family: 'Cinzel', serif;
+}
+
+.welcome-text .tagline {
+  color: #00FF66; /* Emerald Green */
+  font-weight: 600;
 }
 
 .right-aligned {
@@ -133,7 +138,7 @@ const scrollToSection = (section) => {
 }
 
 .nav-link {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -141,10 +146,15 @@ const scrollToSection = (section) => {
   font-weight: 500;
   letter-spacing: 0.3px;
   opacity: 0.8;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .nav-link:hover {
   opacity: 1;
+  color: #9aa0a6; /* Darker platinum for hover */
   transform: translateY(-1px);
 }
 

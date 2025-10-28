@@ -42,8 +42,7 @@ import { Icon } from "@iconify/vue";
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .social-icons {
@@ -82,6 +81,7 @@ import { Icon } from "@iconify/vue";
   font-weight: 500;
   letter-spacing: 0.5px;
   margin: 0.5rem 0;
+  font-family: 'Cinzel', serif;
 }
 
 .contact-info {

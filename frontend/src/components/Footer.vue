@@ -115,41 +115,43 @@
 }
 
 .footer-section h3 {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 
 .footer-section h4 {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
 .footer-section h5 {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
 .tagline {
-  color: #cccccc;
+  color: #00FF66; /* Emerald Green */
   font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .description {
-  color: #cccccc;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
+  font-family: 'Lora', serif;
 }
 
 .contact-methods {
@@ -176,14 +178,14 @@
 }
 
 .phone-link, .email-link {
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .phone-link:hover, .email-link:hover {
-  color: #cccccc;
+  color: #9aa0a6; /* Darker platinum for hover */
 }
 
 .label {

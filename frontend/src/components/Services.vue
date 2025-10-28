@@ -140,12 +140,13 @@ const currentService2 = computed(() => services2.value[currentIndex2.value]);
 /* Styling for the Services and Home Titles */
 h1 {
   font-size: 2.5rem; /* Larger font for titles */
-  color: #333; /* Dark color for better readability */
-  font-weight: bold; /* Bold for emphasis */
+  color: #C0C0C0; /* Platinum Silver */
+  font-weight: 700; /* Bold for emphasis */
   text-align: center; /* Center align the titles */
   margin: 2rem 0; /* Add spacing above and below */
   text-transform: uppercase; /* All caps for a more professional look */
   letter-spacing: 2px; /* Slightly increase the letter spacing for a modern look */
+  font-family: 'Cinzel', serif;
 }
 
 /* Services container styling */
@@ -170,14 +171,16 @@ h1 {
 .service-title {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: rgb(103, 99, 99);
-  font-weight: bold;
+  color: #C0C0C0; /* Platinum Silver */
+  font-weight: 700;
+  font-family: 'Cinzel', serif;
 }
 
 /* Service description styling */
 .service-description {
   font-size: 1.2rem;
-  color: black;
+  color: #C0C0C0; /* Platinum Silver */
+  font-family: 'Lora', serif;
 }
 
 /* Arrow button styling */
@@ -186,13 +189,13 @@ h1 {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: black;
+  color: #C0C0C0; /* Platinum Silver */
   padding: 0 1rem;
   user-select: none;
 }
 
 /* Arrow button hover effect */
 .arrow:hover {
-  color: #838484;
+  color: #9aa0a6; /* Darker platinum for hover */
 }
 </style>

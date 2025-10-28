@@ -2,7 +2,6 @@
   <div class="company-summary" id="services">
     <div class="summary-content">
       <h2>Platinum Enterprise Group</h2>
-      <p class="tagline">A Step Above The Rest</p>
       <div class="summary-grid">
         <div class="summary-item">
           <h3>Property Maintenance</h3>
@@ -37,7 +36,7 @@ const scrollToContact = () => {
 <style scoped>
 .company-summary {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 4rem 2rem;
+  padding: 2rem 1rem; /* Reduced excessive padding */
   margin: 2rem 0;
 }
 
@@ -45,37 +44,35 @@ const scrollToContact = () => {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 1rem; /* Added horizontal padding */
 }
 
 h2 {
-  color: #000000;
+  color: #000000; /* Black for better readability */
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  margin-bottom: 2rem; /* Added breathing room below title */
+  margin-top: 0; /* Removed top margin */
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 1px; /* Added letter spacing for better appearance */
 }
 
-.tagline {
-  color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-  font-style: italic;
-  letter-spacing: 1px;
-}
 
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Reduced bottom margin */
+  margin-top: 0; /* Removed top margin */
 }
 
 .summary-item {
-  background: white;
+  background: #1B1B1B; /* Graphite Black background */
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #C0C0C0; /* Platinum Silver border */
 }
 
 .summary-item:hover {
@@ -84,39 +81,43 @@ h2 {
 }
 
 .summary-item h3 {
-  color: #000000;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
 .summary-item p {
-  color: #555;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
+  font-family: 'Lora', serif;
+  opacity: 0.9;
 }
 
 .cta-section {
-  background: white;
-  padding: 2rem;
+  background: #1B1B1B; /* Graphite Black background */
+  padding: 1.5rem; /* Reduced padding */
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   max-width: 600px;
   margin: 0 auto;
+  border: 1px solid #C0C0C0; /* Platinum Silver border */
 }
 
 .cta-section p {
-  color: #333;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  font-family: 'Lora', serif;
 }
 
 .cta-button {
-  background: #000000;
-  color: #ffffff;
+  background: #C0C0C0; /* Platinum Silver */
+  color: #000000;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -125,11 +126,11 @@ h2 {
   transition: all 0.3s ease;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .cta-button:hover {
-  background: #333333;
+  background: #9aa0a6; /* Darker platinum for hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

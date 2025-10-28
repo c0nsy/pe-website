@@ -29,29 +29,29 @@
   max-width: 800px;
   margin: 100px auto;
   padding: 2rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #C0C0C0; /* Platinum Silver */
   border-radius: 8px;
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  background-color: #1B1B1B; /* Graphite Black */
+  color: #C0C0C0; /* Platinum Silver */
+  font-family: 'Lora', serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .page-header {
   text-align: center;
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   margin-bottom: 2rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.5px;
+  font-family: 'Cinzel', serif;
 }
 
 .about-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   opacity: 0.9;
   font-size: 1rem;
   letter-spacing: 0.3px;
@@ -68,7 +68,7 @@
 }
 
 .about-page:hover {
-  border-color: #ffffff;
+  border-color: #9aa0a6; /* Darker platinum for hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }

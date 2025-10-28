@@ -41,12 +41,12 @@ onMounted(() => {
 
 /* Header Styling */
 .gallery-header {
-  color: #000000; /* Black for the header text */
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 2.5rem; /* Font size for the header */
-  font-family: "Arial", sans-serif; /* Clean and readable font */
-  font-weight: bold; /* Make the header stand out */
+  font-family: 'Cinzel', serif; /* Clean and readable font */
+  font-weight: 700; /* Make the header stand out */
   margin-bottom: 2rem; /* Space below the header */
-  border-bottom: 2px solid #838484; /* Medium Gray for the bottom border */
+  border-bottom: 2px solid #C0C0C0; /* Platinum Silver for the bottom border */
   display: inline-block; /* Ensure the border is centered under the text */
   padding-bottom: 0.5rem; /* Space between the text and the border */
 }

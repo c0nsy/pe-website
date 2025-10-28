@@ -48,12 +48,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #C0C0C0; /* Platinum Silver */
   font-size: 1rem;
   text-align: center;
   padding: 1.5rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: 'Lora', serif;
   letter-spacing: 0.3px;
 }
 
@@ -76,7 +75,7 @@
 }
 
 .hero-button {
-  background-color: #ffffff;
+  background-color: #C0C0C0; /* Platinum Silver */
   color: #000000;
   border: none;
   border-radius: 4px;
@@ -90,12 +89,11 @@
   min-width: 200px;
   display: inline-block;
   text-align: center;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .hero-button:hover {
-  background-color: #f0f0f0;
+  background-color: #9aa0a6; /* Darker platinum for hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
