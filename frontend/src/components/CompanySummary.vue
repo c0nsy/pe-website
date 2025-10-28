@@ -7,39 +7,10 @@
         <div class="summary-item">
           <h3>Property Maintenance</h3>
           <p>From grass to snow and everything in between—our team delivers full-service, year-round property care tailored for commercial clients, builders, and property managers who don't have time to chase contractors. We handle the lawn maintenance, landscaping, snow removal, and 24/7 weather monitoring—so you don't have to worry if it's going to be 30°C or a blizzard by breakfast. Your property stays sharp, safe, and looking its best—no matter what Mother Nature throws at it (and trust us, she's got an arm).</p>
-          <div class="services-list">
-            <ol>
-              <li>Lawn / Landscape</li>
-              <li>Hardscape / Softscape</li>
-              <li>Spring / Fall Cleanups</li>
-              <li>Snow and Ice Management</li>
-              <li>Janitorial Services</li>
-              <li>Junk / Graffiti Removal</li>
-              <li>Asphalt Maintenance / Repair</li>
-              <li>Irrigation Water Systems</li>
-            </ol>
-          </div>
         </div>
         <div class="summary-item">
           <h3>Additional Services</h3>
           <p>From custom fences and decks to roofing, painting, concrete work, and full-scale renovations—our team delivers quality craftsmanship with zero shortcuts and zero nonsense. Looking to upgrade your space? We specialize in interior and exterior transformations, and yes—we also build some of the most badass backyard golf greens this side of the PGA. Whether you're chasing curb appeal or working on your short game between barbecues, we've got you covered.</p>
-          <div class="services-list">
-            <ol>
-              <li>Landscape Design</li>
-              <li>Deck and Fencing</li>
-              <li>Artificial Turf / Custom Putting Green Installation</li>
-              <li>Tree Removal / Stump Grinding</li>
-              <li>Sod Installation</li>
-              <li>Interlock Stone / Retaining Walls</li>
-              <li>Demolitions / Bin Rentals</li>
-              <li>Interior Renovations</li>
-              <li>Exterior Renovations</li>
-              <li>Concrete</li>
-              <li>Roofing</li>
-              <li>Mobile Welding</li>
-              <li>Caulking</li>
-            </ol>
-          </div>
         </div>
         <div class="summary-item">
           <h3>Experience & Quality</h3>
@@ -124,25 +95,7 @@ h2 {
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0 0 1rem 0;
-}
-
-.services-list {
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.services-list ol {
   margin: 0;
-  padding-left: 1.5rem;
-  color: #333;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.services-list li {
-  margin-bottom: 0.3rem;
-  font-weight: 500;
 }
 
 .cta-section {

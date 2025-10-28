@@ -25,7 +25,7 @@
             <div class="contact-item">
               <span class="icon">📞</span>
               <div class="contact-details">
-                <a href="tel:5194984694" class="phone-link">(519) 498-4694</a>
+                <a href="tel:18662782610" class="phone-link">1-866-278-2610</a>
                 <span class="label">After Hours</span>
               </div>
             </div>
