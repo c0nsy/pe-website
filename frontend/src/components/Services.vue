@@ -12,9 +12,9 @@
 
       <button class="arrow right-arrow" @click="nextService1">&#9654;</button>
     </div>
-    <h1>Contract Services</h1>
+    <h1>Additional Services</h1>
     <!-- Second Services Container -->
-    <div class="services-container" id="services">
+    <div class="services-container" id="additional-services">
       <button class="arrow left-arrow" @click="prevService2">&#9664;</button>
 
       <div class="service" v-if="currentService2">
@@ -56,7 +56,7 @@ const services1 = ref([
 
 const currentIndex1 = ref(0);
 
-// Contract Services (Platinum Home)
+// Additional Services
 const services2 = ref([
   {
     title: "Interior Renovation",

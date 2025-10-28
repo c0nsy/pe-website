@@ -9,7 +9,7 @@
       >
         <Icon icon="mdi:facebook" width="20" height="20" />
       </a>
-      <a href="mailto:troy@platinumeg.ca" aria-label="Email">
+      <a href="mailto:office@platinumeg.ca" aria-label="Email">
         <Icon icon="mdi:email" width="20" height="20" />
       </a>
     </div>
@@ -18,7 +18,7 @@
     </div>
     <div class="contact-info">
       <span>Primary: (548) 558-1970</span>
-      <span>After Hours: (519) 498-4694</span>
+      <span>After Hours: 1-866-278-2610</span>
       <span>Email: office@platinumeg.ca</span>
     </div>
   </nav>

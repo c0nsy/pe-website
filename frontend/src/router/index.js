@@ -15,8 +15,8 @@ const routes = [
     component: PropertyMaintenance,
   },
   {
-    path: "/contract-services",
-    name: "ContractServices",
+    path: "/additional-services",
+    name: "AdditionalServices",
     component: ContractServices,
   },
 ];

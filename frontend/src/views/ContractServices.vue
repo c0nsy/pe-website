@@ -1,13 +1,12 @@
 <template>
-  <div class="contract-services">
+  <div class="additional-services">
     <div class="content">
-      <h1>Contract Services</h1>
+      <h1>Additional Services</h1>
       <p class="description">
-        In November 2023, Perfect Image Property Maintenance Inc. announced its partnership with Platinum Enterprise
-        Group, accepting the opportunity to become a full-service property maintenance enterprise. This represented a
-        step towards service expansion. In addition to its existing landscape and property maintenance services, through
-        strategic opportunity and new partnerships, Perfect Image has realized an expanded scope of related service
-        offerings.
+        Platinum Enterprise Group has expanded its service offerings to provide comprehensive property solutions.
+        Through strategic partnerships and continuous growth, we have developed an expanded scope of related service
+        offerings. Our additional services complement our core property maintenance and landscaping expertise,
+        ensuring we can meet all your property needs under one roof.
       </p>
 
       <div class="services-grid">
@@ -182,7 +181,7 @@ const closeModal = () => {
 </script>
 
 <style scoped>
-.contract-services {
+.additional-services {
   padding-top: 165px;
   min-height: 100vh;
   background-color: #f5f5f5;

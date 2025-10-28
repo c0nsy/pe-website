@@ -6,8 +6,8 @@
           <router-link to="/property-maintenance" class="hero-button">
             Property Maintenance
           </router-link>
-          <router-link to="/contract-services" class="hero-button">
-            Contract Services
+          <router-link to="/additional-services" class="hero-button">
+            Additional Services
           </router-link>
         </div>
       </div>

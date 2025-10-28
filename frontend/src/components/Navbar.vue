@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-bar">
     <div class="left-aligned">
-      <img src="../assets/logo.png" alt="Logo" width="140" height="140" />
+      <img src="../assets/New Platinum Enterprise Group Logo.jpg" alt="Platinum Enterprise Group Logo" width="140" height="140" />
     </div>
     <div class="center-aligned">
       <span class="welcome-text"
@@ -10,13 +10,8 @@
     </div>
     <div class="right-aligned">
       <span class="nav-link" @click="handleNavigation('home')">Home</span>
+      <span class="nav-link" @click="handleNavigation('services')">Services</span>
       <span class="nav-link" @click="handleNavigation('about')">About</span>
-      <span class="nav-link" @click="handleNavigation('services')"
-        >Services</span
-      >
-      <button class="contact-button" @click="handleNavigation('contact')">
-        Contact
-      </button>
     </div>
   </nav>
 </template>
@@ -50,14 +45,11 @@ const scrollToSection = (section) => {
         behavior: "smooth",
       });
       return;
-    case "about":
-      targetId = "#about";
-      break;
     case "services":
       targetId = "#services";
       break;
-    case "contact":
-      targetId = "#contact-form";
+    case "about":
+      targetId = "#about";
       break;
   }
 
@@ -175,12 +167,10 @@ const scrollToSection = (section) => {
 }
 
 .left-aligned img {
-  border-radius: 8px;
-  transition: transform 0.2s ease;
-}
-
-.left-aligned img:hover {
-  transform: scale(1.02);
+  border-radius: 0;
+  background-color: #000000;
+  mix-blend-mode: normal;
+  border: none;
 }
 
 @media (max-width: 768px) {
