@@ -159,6 +159,61 @@ const services = ref([
       lawncare,
       lawncare1
     ]
+  },
+  {
+    id: 9,
+    title: "Landscape Design",
+    shortDescription: "Free consultation with our design professionals",
+    description: "Free consultation with our design professionals to ensure that we transform vision into results, on time and within your budget. Whether it is rejuvenating an existing landscape or custom building your vision from the ground up.",
+    images: [
+      stonestepsgarden,
+      hardscape,
+      hardscape2
+    ]
+  },
+  {
+    id: 10,
+    title: "Artificial Turf / Custom Putting Green Installation",
+    shortDescription: "Premium artificial turf and custom putting greens",
+    description: "Say goodbye to mowing, watering, and patchy grass. Our premium artificial turf delivers lush, green perfection all year round—without the maintenance. Ideal for high-traffic areas, shaded spaces, or properties dealing with water restrictions, our turf looks real, feels real, and stands up to whatever you throw at it. And for all the backyard BBQ kings rocking a dad bod—or raising the next John Daly—we offer custom backyard putting greens built to impress.",
+    images: [
+      lawncare,
+      lawncare1,
+      garden
+    ]
+  },
+  {
+    id: 11,
+    title: "Tree Removal / Stump Grinding",
+    shortDescription: "Expert tree removal and stump grinding services",
+    description: "When it comes to removing trees, we don't just get the job done—we get it done right. Our expert team uses proven, industry-leading techniques and heavy-duty equipment to safely take down everything from dangerous overhanging limbs to massive problem trees. Then we grind stumps deep below the surface, wiping out any chance of regrowth and eliminating ugly, hazardous eyesores.",
+    images: [
+      garden,
+      contract1,
+      contract2
+    ]
+  },
+  {
+    id: 12,
+    title: "Sod Installation",
+    shortDescription: "Fast, professional sod installation for instant green lawns",
+    description: "Fast, professional sod installation for instant green lawns—no waiting, no patches, no headaches. We prep the soil, lay high-quality sod, and provide simple care instructions so your new lawn takes root and thrives. Why choose sod over seed, you ask? Unless you're a retired old-timer with nothing better to do than sip a cold wobbly pop and stare at dirt all day, there's really no reason not to. Let's get it done right—and done fast.",
+    images: [
+      lawn,
+      lawn2,
+      lawn3
+    ]
+  },
+  {
+    id: 13,
+    title: "Interlock Stone / Retaining Walls",
+    shortDescription: "Precision-built, professionally installed stone work",
+    description: "Precision-built, professionally installed, and designed to impress—our interlock stone and retaining wall services are the perfect way to upgrade any outdoor space. From stunning residential driveways and backyard patios to commercial walkways, entrances, and grade solutions, we deliver lasting results that boost both curb appeal and property value.",
+    images: [
+      hardscape,
+      hardscape2,
+      concretework
+    ]
   }
 ]);
 
@@ -177,7 +232,7 @@ const closeModal = () => {
 .property-maintenance {
   padding-top: 165px;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #1B1B1B; /* Graphite Black - matching main page */
 }
 
 .content {
@@ -210,17 +265,19 @@ h1 {
 }
 
 .service-item {
-  background: white;
+  background: #2a2a2a; /* Dark grey for cards */
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3a3a; /* Subtle border for definition */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .service-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  border-color: #4a4a4a; /* Slightly lighter border on hover */
 }
 
 .service-item h3 {
@@ -253,14 +310,15 @@ h1 {
 }
 
 .modal-content {
-  background: white;
+  background: #2a2a2a; /* Dark grey matching service cards */
   border-radius: 12px;
   max-width: 800px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid #3a3a3a;
 }
 
 .modal-close {
@@ -271,7 +329,7 @@ h1 {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #666;
+  color: #C0C0C0; /* Platinum Silver */
   z-index: 1001;
   width: 40px;
   height: 40px;
@@ -283,13 +341,13 @@ h1 {
 }
 
 .modal-close:hover {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #3a3a3a;
+  color: #ffffff;
 }
 
 .modal-header {
   padding: 2rem 2rem 1rem 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #3a3a3a; /* Dark border matching theme */
 }
 
 .modal-header h2 {
