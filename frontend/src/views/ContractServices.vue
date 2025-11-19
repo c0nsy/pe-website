@@ -67,6 +67,15 @@ import frontsteps from '../assets/work/frontsteps.jpg';
 import propertymaintenance from '../assets/work/propertymaitenance.jpg';
 import propertymaintenance2 from '../assets/work/propertymaitenance2.jpg';
 import stonestepsgarden from '../assets/work/stonestepsgarden.jpg';
+// Brick laying images
+import brick_laying from '../assets/work/brick_laying.jpg';
+import brick_laying2 from '../assets/work/brick_laying2.jpg';
+import brick_laying3 from '../assets/work/brick_laying3.jpg';
+// Tree cutting images
+import tree_cutting from '../assets/work/tree_cutting.jpg';
+import tree_cutting2 from '../assets/work/tree_cutting2.jpg';
+// Construction image
+import construction from '../assets/work/construction.jpg';
 
 const selectedService = ref(null);
 
@@ -99,9 +108,9 @@ const services = ref([
     shortDescription: "Transform your living or working space",
     description: "Transform your living or working space with our interior renovation expertise, ensuring modern, stylish and functional designs. From framing and drywall to painting and flooring, we handle all aspects of interior renovations with precision and quality craftsmanship.",
     images: [
+      construction,
       contract1,
-      contract2,
-      hardscape
+      contract2
     ]
   },
   {
@@ -110,9 +119,9 @@ const services = ref([
     shortDescription: "Enhance your property's curb appeal",
     description: "Enhance your property's curb appeal with our comprehensive exterior renovation services. From siding and roofing to windows and doors, we transform the exterior of your home or business to create lasting value and visual impact.",
     images: [
+      construction,
       contract1,
-      contract2,
-      hardscape
+      contract2
     ]
   },
   {
@@ -187,9 +196,9 @@ const services = ref([
     shortDescription: "Expert tree removal and stump grinding services",
     description: "When it comes to removing trees, we don't just get the job done—we get it done right. Our expert team uses proven, industry-leading techniques and heavy-duty equipment to safely take down everything from dangerous overhanging limbs to massive problem trees. Then we grind stumps deep below the surface, wiping out any chance of regrowth and eliminating ugly, hazardous eyesores.",
     images: [
-      garden,
-      contract1,
-      contract2
+      tree_cutting,
+      tree_cutting2,
+      garden
     ]
   },
   {
@@ -209,6 +218,9 @@ const services = ref([
     shortDescription: "Precision-built, professionally installed stone work",
     description: "Precision-built, professionally installed, and designed to impress—our interlock stone and retaining wall services are the perfect way to upgrade any outdoor space. From stunning residential driveways and backyard patios to commercial walkways, entrances, and grade solutions, we deliver lasting results that boost both curb appeal and property value.",
     images: [
+      brick_laying,
+      brick_laying2,
+      brick_laying3,
       hardscape,
       hardscape2,
       concretework

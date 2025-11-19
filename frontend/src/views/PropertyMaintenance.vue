@@ -68,6 +68,34 @@ import frontsteps from '../assets/work/frontsteps.jpg';
 import propertymaintenance from '../assets/work/propertymaitenance.jpg';
 import propertymaintenance2 from '../assets/work/propertymaitenance2.jpg';
 import stonestepsgarden from '../assets/work/stonestepsgarden.jpg';
+// Lawn/Landscape images
+import home_lawncare from '../assets/work/home_lawncare.jpg';
+import home_lawncare2 from '../assets/work/home_lawncare2.jpg';
+import home_lawncare3 from '../assets/work/home_lawncare3.jpg';
+import commerical_lawncare from '../assets/work/commerical_lawncare.jpg';
+import commerical_propertycare from '../assets/work/commerical_propertycare.jpg';
+import residential_lawn_gardens from '../assets/work/residential_lawn_gardens.jpg';
+import residential_lawncare_apartments from '../assets/work/residential_lawncare_apartments.jpg';
+import lawn_care2 from '../assets/work/lawn_care2.jpg';
+import lawn_care4 from '../assets/work/lawn_care4.jpg';
+import apartment_care2 from '../assets/work/apartment_care2.jpg';
+import apartment_care4 from '../assets/work/apartment_care4.jpg';
+import apartment_care5 from '../assets/work/apartment_care5.jpg';
+import apartmentcare_6 from '../assets/work/apartmentcare_6.jpg';
+import apartment_gardencare from '../assets/work/apartment_gardencare.jpg';
+import apartment_gardencare2 from '../assets/work/apartment_gardencare2.jpg';
+import apartment_car from '../assets/work/apartment_car.jpg';
+import flowerbeds from '../assets/work/flowerbeds.jpg';
+import commercial_flowerbeds from '../assets/work/commercial_flowerbeds.jpg';
+import commerical_flowerbeds2 from '../assets/work/commerical_flowerbeds2.jpg';
+import apartmentcare_flowerbeds from '../assets/work/apartmentcare_flowerbeds.jpg';
+import garden_work from '../assets/work/garden_work.jpg';
+import mulch_property from '../assets/work/mulch_property.jpg';
+// Asphalt images
+import asphalt from '../assets/work/asphalt.jpg';
+import asphalt2 from '../assets/work/asphalt2.jpg';
+import asphalt3 from '../assets/work/asphalt3.jpg';
+import asphalt4 from '../assets/work/asphalt4.jpg';
 
 const selectedService = ref(null);
 
@@ -80,7 +108,29 @@ const services = ref([
     images: [
       lawn,
       lawn2,
-      lawn3
+      lawn3,
+      home_lawncare,
+      home_lawncare2,
+      home_lawncare3,
+      commerical_lawncare,
+      commerical_propertycare,
+      residential_lawn_gardens,
+      residential_lawncare_apartments,
+      lawn_care2,
+      lawn_care4,
+      apartment_care2,
+      apartment_care4,
+      apartment_care5,
+      apartmentcare_6,
+      apartment_gardencare,
+      apartment_gardencare2,
+      apartment_car,
+      flowerbeds,
+      commercial_flowerbeds,
+      commerical_flowerbeds2,
+      apartmentcare_flowerbeds,
+      garden_work,
+      mulch_property
     ]
   },
   {
@@ -91,7 +141,12 @@ const services = ref([
     images: [
       hardscape,
       hardscape2,
-      garden
+      garden,
+      flowerbeds,
+      commercial_flowerbeds,
+      commerical_flowerbeds2,
+      apartmentcare_flowerbeds,
+      garden_work
     ]
   },
   {
@@ -144,9 +199,11 @@ const services = ref([
     shortDescription: "Comprehensive asphalt solutions",
     description: "From foundations to decorative concrete work, we offer comprehensive concrete solutions to meet your project needs. Our services include forming, pouring, finishing, colouring, and stamping. Please feel free to call if your needs relate to concrete repair, or parging.",
     images: [
-      concretework,
-      hardscape,
-      hardscape2
+      asphalt,
+      asphalt2,
+      asphalt3,
+      asphalt4,
+      concretework
     ]
   },
   {
