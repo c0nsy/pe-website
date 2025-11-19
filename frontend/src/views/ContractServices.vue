@@ -74,6 +74,8 @@ import brick_laying3 from '../assets/work/brick_laying3.jpg';
 // Tree cutting images
 import tree_cutting from '../assets/work/tree_cutting.jpg';
 import tree_cutting2 from '../assets/work/tree_cutting2.jpg';
+import tree_work_and_lawn from '../assets/work/tree_work_and_lawn.jpg';
+import tree_work2 from '../assets/work/tree_work2.jpg';
 // Construction image
 import construction from '../assets/work/construction.jpg';
 
@@ -198,6 +200,8 @@ const services = ref([
     images: [
       tree_cutting,
       tree_cutting2,
+      tree_work_and_lawn,
+      tree_work2,
       garden
     ]
   },

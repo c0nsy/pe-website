@@ -96,6 +96,29 @@ import asphalt from '../assets/work/asphalt.jpg';
 import asphalt2 from '../assets/work/asphalt2.jpg';
 import asphalt3 from '../assets/work/asphalt3.jpg';
 import asphalt4 from '../assets/work/asphalt4.jpg';
+import asphalt_1 from '../assets/work/asphalt_1.jpg';
+import asphalt_2 from '../assets/work/asphalt_2.jpg';
+import asphalt_3 from '../assets/work/asphalt_3.jpg';
+import asphalt_4 from '../assets/work/asphalt_4.jpg';
+// Additional lawn/garden images
+import beautiful_home_garden from '../assets/work/beautiful_home_garden.jpg';
+import commercial_garden from '../assets/work/commercial_garden.jpg';
+import commerical_gardencare_1 from '../assets/work/commerical_gardencare_1.jpg';
+import gorgeous_lawncare from '../assets/work/gorgeous_lawncare.jpg';
+import home_garden_lovely from '../assets/work/home_garden_lovely.jpg';
+import home_garden_rainwater from '../assets/work/home_garden_rainwater.jpg';
+import home_grass from '../assets/work/home_grass.jpg';
+import plant_supply from '../assets/work/plant_supply.jpg';
+import residential_gazebo from '../assets/work/residential_gazebo.jpg';
+// Hardscape/stone images
+import residential_pathstone from '../assets/work/residential_pathstone.jpg';
+import residential_stairs from '../assets/work/residential_stairs.jpg';
+import stone_garden_home from '../assets/work/stone_garden_home.jpg';
+import stone_garden_home2 from '../assets/work/stone_garden_home2.jpg';
+// Snow removal images
+import snow_removal from '../assets/work/snow_removal.jpg';
+import snow_removal2 from '../assets/work/snow_removal2.jpg';
+import snow_removal_5 from '../assets/work/snow_removal_5.jpg';
 
 const selectedService = ref(null);
 
@@ -130,7 +153,16 @@ const services = ref([
       commerical_flowerbeds2,
       apartmentcare_flowerbeds,
       garden_work,
-      mulch_property
+      mulch_property,
+      beautiful_home_garden,
+      commercial_garden,
+      commerical_gardencare_1,
+      gorgeous_lawncare,
+      home_garden_lovely,
+      home_garden_rainwater,
+      home_grass,
+      plant_supply,
+      residential_gazebo
     ]
   },
   {
@@ -146,7 +178,11 @@ const services = ref([
       commercial_flowerbeds,
       commerical_flowerbeds2,
       apartmentcare_flowerbeds,
-      garden_work
+      garden_work,
+      residential_pathstone,
+      residential_stairs,
+      stone_garden_home,
+      stone_garden_home2
     ]
   },
   {
@@ -168,7 +204,9 @@ const services = ref([
     images: [
       snow,
       snowremoval,
-      contract1
+      snow_removal,
+      snow_removal2,
+      snow_removal_5
     ]
   },
   {
@@ -203,6 +241,10 @@ const services = ref([
       asphalt2,
       asphalt3,
       asphalt4,
+      asphalt_1,
+      asphalt_2,
+      asphalt_3,
+      asphalt_4,
       concretework
     ]
   },
