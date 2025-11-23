@@ -1,7 +1,14 @@
 <template>
   <nav class="nav-bar">
     <div class="left-aligned">
-      <img src="../assets/New Platinum Enterprise Group Logo.jpg" alt="Platinum Enterprise Group Logo" width="140" height="140" />
+      <img 
+        src="../assets/New Platinum Enterprise Group Logo.jpg" 
+        alt="Platinum Enterprise Group Logo" 
+        width="140" 
+        height="140"
+        @click="handleNavigation('home')"
+        class="logo-clickable"
+      />
     </div>
     <div class="center-aligned">
       <span class="welcome-text"
@@ -22,38 +29,29 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const handleNavigation = (section) => {
-  // If we're not on the home page, navigate there first
-  if (router.currentRoute.value.path !== "/") {
-    router.push("/").then(() => {
-      // After navigation, scroll to the section
-      setTimeout(() => {
-        scrollToSection(section);
-      }, 500); // Increased delay to ensure page is fully loaded
-    });
-  } else {
-    // If we're already on home page, just scroll
-    scrollToSection(section);
+  switch (section) {
+    case "home":
+      router.push("/");
+      break;
+    case "services":
+      // Navigate to home and scroll to services section
+      if (router.currentRoute.value.path !== "/") {
+        router.push("/").then(() => {
+          setTimeout(() => {
+            scrollToSection("#services");
+          }, 500);
+        });
+      } else {
+        scrollToSection("#services");
+      }
+      break;
+    case "about":
+      router.push("/about");
+      break;
   }
 };
 
-const scrollToSection = (section) => {
-  let targetId;
-  switch (section) {
-    case "home":
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-      return;
-    case "services":
-      targetId = "#services";
-      break;
-    case "about":
-      targetId = "#about";
-      break;
-  }
-
-  // More robust scroll handling
+const scrollToSection = (targetId) => {
   const scrollToElement = () => {
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
@@ -181,6 +179,15 @@ const scrollToSection = (section) => {
   background-color: #000000;
   mix-blend-mode: normal;
   border: none;
+}
+
+.logo-clickable {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logo-clickable:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {

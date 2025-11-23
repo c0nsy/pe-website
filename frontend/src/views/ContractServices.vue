@@ -76,8 +76,31 @@ import tree_cutting from '../assets/work/tree_cutting.jpg';
 import tree_cutting2 from '../assets/work/tree_cutting2.jpg';
 import tree_work_and_lawn from '../assets/work/tree_work_and_lawn.jpg';
 import tree_work2 from '../assets/work/tree_work2.jpg';
+import stump_removal from '../assets/work/stump_removal.jpg';
 // Construction image
 import construction from '../assets/work/construction.jpg';
+// Renovation images
+import interior_renos from '../assets/work/interior_renos.jpg';
+import interiror_reno from '../assets/work/interiror_reno.jpg';
+import ex_reno from '../assets/work/ex_reno.jpg';
+import exterior_reno from '../assets/work/exterior_reno.jpg';
+import exterior_renos from '../assets/work/exterior_renos.jpg';
+import exteriror_reno2 from '../assets/work/exteriror_reno2.jpg';
+import exteriror_reno5 from '../assets/work/exteriror_reno5.jpg';
+import exx_reno from '../assets/work/exx_reno.jpg';
+// Roofing images
+import roofing from '../assets/work/roofing.jpg';
+// Mobile welding images
+import mobile_welding from '../assets/work/mobile_welding.jpg';
+import mobile_welding_2 from '../assets/work/mobile_welding_2.jpg';
+import welding from '../assets/work/welding.jpg';
+import welding_2 from '../assets/work/welding_2.jpg';
+import welding_3 from '../assets/work/welding_3.jpg';
+// Sod installation images
+import sod_install from '../assets/work/sod_install.jpg';
+import sod from '../assets/work/sod.jpg';
+// Playground repair
+import playground_repair from '../assets/work/playground_repair.jpg';
 
 const selectedService = ref(null);
 
@@ -110,6 +133,8 @@ const services = ref([
     shortDescription: "Transform your living or working space",
     description: "Transform your living or working space with our interior renovation expertise, ensuring modern, stylish and functional designs. From framing and drywall to painting and flooring, we handle all aspects of interior renovations with precision and quality craftsmanship.",
     images: [
+      interior_renos,
+      interiror_reno,
       construction,
       contract1,
       contract2
@@ -121,6 +146,13 @@ const services = ref([
     shortDescription: "Enhance your property's curb appeal",
     description: "Enhance your property's curb appeal with our comprehensive exterior renovation services. From siding and roofing to windows and doors, we transform the exterior of your home or business to create lasting value and visual impact.",
     images: [
+      ex_reno,
+      exterior_reno,
+      exterior_renos,
+      exteriror_reno2,
+      exteriror_reno5,
+      exx_reno,
+      playground_repair,
       construction,
       contract1,
       contract2
@@ -143,6 +175,7 @@ const services = ref([
     shortDescription: "Comprehensive range of roofing services",
     description: "We offer a comprehensive range of roofing services tailored to meet the unique needs of our clients. With a focus on quality craftsmanship and superior materials, we specialize in the installation, repair, and maintenance of slate, cedar, asphalt shingles, and metal roofs.",
     images: [
+      roofing,
       contract1,
       contract2,
       concretework
@@ -154,9 +187,13 @@ const services = ref([
     shortDescription: "Welding technologies directly to your location",
     description: "Bringing the necessary welding technologies directly to the location allows for both efficiency and practicality through being onsite. Our mobile welding services provide convenient, professional welding solutions wherever you need them.",
     images: [
+      mobile_welding,
+      mobile_welding_2,
+      welding,
+      welding_2,
+      welding_3,
       contract1,
-      contract2,
-      hardscape
+      contract2
     ]
   },
   {
@@ -202,6 +239,7 @@ const services = ref([
       tree_cutting2,
       tree_work_and_lawn,
       tree_work2,
+      stump_removal,
       garden
     ]
   },
@@ -211,6 +249,8 @@ const services = ref([
     shortDescription: "Fast, professional sod installation for instant green lawns",
     description: "Fast, professional sod installation for instant green lawns—no waiting, no patches, no headaches. We prep the soil, lay high-quality sod, and provide simple care instructions so your new lawn takes root and thrives. Why choose sod over seed, you ask? Unless you're a retired old-timer with nothing better to do than sip a cold wobbly pop and stare at dirt all day, there's really no reason not to. Let's get it done right—and done fast.",
     images: [
+      sod_install,
+      sod,
       lawn,
       lawn2,
       lawn3

@@ -119,6 +119,26 @@ import stone_garden_home2 from '../assets/work/stone_garden_home2.jpg';
 import snow_removal from '../assets/work/snow_removal.jpg';
 import snow_removal2 from '../assets/work/snow_removal2.jpg';
 import snow_removal_5 from '../assets/work/snow_removal_5.jpg';
+import snow_removal8 from '../assets/work/snow_removal8.jpg';
+import snow_removal_89 from '../assets/work/snow_removal_89.jpg';
+// Additional lawn/garden images
+import apartment_complex_gardencare from '../assets/work/apartment_complex_gardencare.jpg';
+import garden_care_prep from '../assets/work/garden_care_prep.jpg';
+import sod_install from '../assets/work/sod_install.jpg';
+import sod from '../assets/work/sod.jpg';
+import spring_cleaning from '../assets/work/spring_cleaning.jpg';
+// Hardscape/softscape images
+import hardscape_soft from '../assets/work/hardscape_soft.jpg';
+import hardscape_soft2 from '../assets/work/hardscape_soft2.jpg';
+import softscape from '../assets/work/softscape.jpg';
+import softscape3 from '../assets/work/softscape3.jpg';
+import rock_removal from '../assets/work/rock_removal.jpg';
+import rock_removal2 from '../assets/work/rock_removal2.jpg';
+import rock_removal3 from '../assets/work/rock_removal3.jpg';
+// Asphalt images
+import residential_clean_aspalt from '../assets/work/residential_clean_aspalt.jpg';
+// Graffiti removal
+import graffitiremoval from '../assets/work/graffitiremoval.jpg';
 
 const selectedService = ref(null);
 
@@ -162,7 +182,11 @@ const services = ref([
       home_garden_rainwater,
       home_grass,
       plant_supply,
-      residential_gazebo
+      residential_gazebo,
+      apartment_complex_gardencare,
+      garden_care_prep,
+      sod_install,
+      sod
     ]
   },
   {
@@ -182,7 +206,14 @@ const services = ref([
       residential_pathstone,
       residential_stairs,
       stone_garden_home,
-      stone_garden_home2
+      stone_garden_home2,
+      hardscape_soft,
+      hardscape_soft2,
+      softscape,
+      softscape3,
+      rock_removal,
+      rock_removal2,
+      rock_removal3
     ]
   },
   {
@@ -193,7 +224,9 @@ const services = ref([
     images: [
       garden,
       lawncare,
-      lawncare1
+      lawncare1,
+      spring_cleaning,
+      garden_care_prep
     ]
   },
   {
@@ -206,7 +239,9 @@ const services = ref([
       snowremoval,
       snow_removal,
       snow_removal2,
-      snow_removal_5
+      snow_removal_5,
+      snow_removal8,
+      snow_removal_89
     ]
   },
   {
@@ -215,9 +250,7 @@ const services = ref([
     shortDescription: "State of the art equipment and green solutions",
     description: "State of the art equipment and green solutions for the highest quality at affordable prices. Whether you need your home cleaned or you have an office or business you'd like to shine, we have the skilled staff to make it happen. Our services fulfill the needs of business, retail, commercial and industrial environments.",
     images: [
-      contract1,
-      contract2,
-      concretework
+      graffitiremoval
     ]
   },
   {
@@ -226,9 +259,7 @@ const services = ref([
     shortDescription: "Fast, discreet, and thorough removal services",
     description: "Illegal dumping and graffiti are ongoing challenges for commercial property owners and managers—especially in high-traffic areas like plazas, retail centres, and industrial sites. These issues don't just affect appearance—they impact property value, tenant satisfaction, and liability. Our team provides fast, discreet, and thorough removal services tailored to commercial properties. Whether it's clearing out illegally dumped debris or professionally restoring defaced surfaces, we handle the headaches so you don't have to.",
     images: [
-      contract1,
-      contract2,
-      concretework
+      graffitiremoval
     ]
   },
   {
@@ -245,6 +276,7 @@ const services = ref([
       asphalt_2,
       asphalt_3,
       asphalt_4,
+      residential_clean_aspalt,
       concretework
     ]
   },
