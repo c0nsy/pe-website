@@ -9,6 +9,14 @@
       >
         <Icon icon="mdi:facebook" width="20" height="20" />
       </a>
+      <a
+        href="https://www.instagram.com/platinumenterprisegroup"
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon icon="mdi:instagram" width="20" height="20" />
+      </a>
       <a href="mailto:office@platinumeg.ca" aria-label="Email">
         <Icon icon="mdi:email" width="20" height="20" />
       </a>
@@ -63,6 +71,10 @@ import { Icon } from "@iconify/vue";
 
 .social-icons a[aria-label="Facebook"] {
   color: #1877f2;
+}
+
+.social-icons a[aria-label="Instagram"] {
+  color: #E4405F;
 }
 
 .social-icons a[aria-label="Email"] {

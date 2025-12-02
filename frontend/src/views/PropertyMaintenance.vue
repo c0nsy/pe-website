@@ -37,11 +37,26 @@
               v-for="(image, index) in selectedService.images" 
               :key="index"
               class="gallery-item"
+              @click="openImageLightbox(image, index)"
             >
               <img :src="image" :alt="`${selectedService.title} - Image ${index + 1}`" />
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div v-if="imageLightboxOpen" class="lightbox-overlay" @click="closeImageLightbox">
+      <button class="lightbox-close" @click="closeImageLightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" @click.stop="prevImage" v-if="selectedService && selectedService.images.length > 1">
+        &#8249;
+      </button>
+      <button class="lightbox-nav lightbox-next" @click.stop="nextImage" v-if="selectedService && selectedService.images.length > 1">
+        &#8250;
+      </button>
+      <div class="lightbox-content" @click.stop>
+        <img :src="currentLightboxImage" :alt="`${selectedService?.title} - Image`" class="lightbox-image" />
       </div>
     </div>
   </div>
@@ -141,6 +156,9 @@ import residential_clean_aspalt from '../assets/work/residential_clean_aspalt.jp
 import graffitiremoval from '../assets/work/graffitiremoval.jpg';
 
 const selectedService = ref(null);
+const imageLightboxOpen = ref(false);
+const currentLightboxImage = ref("");
+const currentImageIndex = ref(0);
 
 const services = ref([
   {
@@ -300,7 +318,33 @@ const openModal = (service) => {
 
 const closeModal = () => {
   selectedService.value = null;
+  imageLightboxOpen.value = false;
   document.body.style.overflow = 'auto';
+};
+
+const openImageLightbox = (image, index) => {
+  currentLightboxImage.value = image;
+  currentImageIndex.value = index;
+  imageLightboxOpen.value = true;
+};
+
+const closeImageLightbox = () => {
+  imageLightboxOpen.value = false;
+};
+
+const nextImage = () => {
+  if (!selectedService.value) return;
+  currentImageIndex.value = (currentImageIndex.value + 1) % selectedService.value.images.length;
+  currentLightboxImage.value = selectedService.value.images[currentImageIndex.value];
+};
+
+const prevImage = () => {
+  if (!selectedService.value) return;
+  currentImageIndex.value =
+    currentImageIndex.value === 0
+      ? selectedService.value.images.length - 1
+      : currentImageIndex.value - 1;
+  currentLightboxImage.value = selectedService.value.images[currentImageIndex.value];
 };
 </script>
 
@@ -460,6 +504,7 @@ h1 {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .gallery-item img {
@@ -471,6 +516,116 @@ h1 {
 
 .gallery-item:hover img {
   transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  z-index: 2001;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  z-index: 2001;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-prev {
+  left: 2rem;
+}
+
+.lightbox-next {
+  right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .lightbox-close {
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+
+  .lightbox-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .lightbox-prev {
+    left: 1rem;
+  }
+
+  .lightbox-next {
+    right: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
