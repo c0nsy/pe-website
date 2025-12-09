@@ -20,10 +20,12 @@ export function ContactSection() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   useEffect(() => {
-    // Initialize EmailJS (optional with @emailjs/browser, but can be used for public key)
+    // Initialize EmailJS with public key
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     if (publicKey) {
       emailjs.init(publicKey)
+    } else {
+      console.warn("EmailJS public key not found. Make sure NEXT_PUBLIC_EMAILJS_PUBLIC_KEY is set in your environment variables.")
     }
   }, [])
 
@@ -32,10 +34,32 @@ export function ContactSection() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
     
+    // Get environment variables
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    
+    // Validate environment variables
+    if (!publicKey || !serviceId || !templateId) {
+      console.error("EmailJS configuration missing:", {
+        hasPublicKey: !!publicKey,
+        hasServiceId: !!serviceId,
+        hasTemplateId: !!templateId,
+      })
+      setSubmitStatus("error")
+      setIsSubmitting(false)
+      return
+    }
+    
     try {
+      // Ensure EmailJS is initialized
+      if (publicKey) {
+        emailjs.init(publicKey)
+      }
+      
       const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+        serviceId,
+        templateId,
         {
           from_name: formData.from_name,
           message: formData.message,

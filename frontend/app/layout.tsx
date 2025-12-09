@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "A Step Above The Rest. Professional property maintenance, landscaping, and contracting services across Southwestern Ontario. 25+ years of excellence.",
   generator: "v0.app",
+  icons: {
+    icon: "/platinum-logo.jpg",
+    shortcut: "/platinum-logo.jpg",
+    apple: "/platinum-logo.jpg",
+  },
 }
 
 export default function RootLayout({
