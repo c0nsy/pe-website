@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://platinumeg.ca/sitemap.xml
+
+
+
