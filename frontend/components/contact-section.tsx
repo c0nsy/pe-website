@@ -21,11 +21,12 @@ export function ContactSection() {
 
   useEffect(() => {
     // Initialize EmailJS with public key
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    // Check both NEXT_PUBLIC_ (Next.js) and VITE_ (Vite/Vue) prefixes for compatibility
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || process.env.VITE_EMAILJS_PUBLIC_KEY
     if (publicKey) {
       emailjs.init(publicKey)
     } else {
-      console.warn("EmailJS public key not found. Make sure NEXT_PUBLIC_EMAILJS_PUBLIC_KEY is set in your environment variables.")
+      console.warn("EmailJS public key not found. Make sure NEXT_PUBLIC_EMAILJS_PUBLIC_KEY or VITE_EMAILJS_PUBLIC_KEY is set in your environment variables.")
     }
   }, [])
 
@@ -34,10 +35,10 @@ export function ContactSection() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
     
-    // Get environment variables
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    // Get environment variables - check both NEXT_PUBLIC_ and VITE_ prefixes
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || process.env.VITE_EMAILJS_PUBLIC_KEY
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || process.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || process.env.VITE_EMAILJS_TEMPLATE_ID
     
     // Validate environment variables
     if (!publicKey || !serviceId || !templateId) {
@@ -45,6 +46,12 @@ export function ContactSection() {
         hasPublicKey: !!publicKey,
         hasServiceId: !!serviceId,
         hasTemplateId: !!templateId,
+        nextPublicKey: !!process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        vitePublicKey: !!process.env.VITE_EMAILJS_PUBLIC_KEY,
+        nextServiceId: !!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        viteServiceId: !!process.env.VITE_EMAILJS_SERVICE_ID,
+        nextTemplateId: !!process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        viteTemplateId: !!process.env.VITE_EMAILJS_TEMPLATE_ID,
       })
       setSubmitStatus("error")
       setIsSubmitting(false)
